@@ -6,3 +6,12 @@ First you have to put your GitHub access token into the source code. Otherwise y
 python crawler.py <repo_owner> <repo>
 python crawler.py numpy numpy
 ```
+
+# Parser
+Reads the 'numpy-numpy.json' file and outputs 'the data_set.txt' file in the format for the ticket tagger
+
+As of 12.10.2020 classified labels:
+questions (33 - Question): 105
+enhancement (01 - Enhancement, 23 - Wish List): 1625
+bug (00 - Bug, 06 - Regression): 5170
+total: 6900
