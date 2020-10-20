@@ -7,15 +7,15 @@ def format_issue(label_name, title, body):
 
 
 labels_dict = {
-    "00 - Bug": "__label__bug",
-    "06 - Regression": "__label__bug",
-    "01 - Enhancement": "__label__enhancement",
-    "01 - Wish List": "__label__enhancement",
-    "33 - Question": "__label__question"
+    "Bug": "__label__bug",
+    "Regression": "__label__bug",
+    "Enhancement": "__label__enhancement",
+    "Performance": "__label__enhancement",
+    "Usage Question": "__label__question"
 }
 
-str = open('numpy-numpy.json', 'r', encoding='utf8').read()
-data_set = open('data_set.txt', 'w', encoding='utf8')
+str = open('pandas-dev-pandas.json', 'r', encoding='utf8').read()
+data_set = open('data_set-pandas.txt', 'w', encoding='utf8')
 
 json_file = ast.literal_eval(str)
 for issue in json_file:
