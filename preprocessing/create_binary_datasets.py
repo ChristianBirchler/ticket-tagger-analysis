@@ -5,6 +5,10 @@ import re
 
 
 def only(issue, label):
+    """
+    If the label is not the same as the label given
+    as input then the issue is relabeled with 'other'
+    """
     prefix_pattern = re.compile(r'__label__\w+')
     match = prefix_pattern.match(issue)
     prefix_ind = match.span()
