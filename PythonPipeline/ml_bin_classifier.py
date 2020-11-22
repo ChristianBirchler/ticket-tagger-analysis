@@ -1,3 +1,5 @@
+import json
+
 import fasttext
 import os.path
 import numpy as np
@@ -46,10 +48,25 @@ f = open(q_path, 'r+', encoding="UTF-8")
 q_data = array(f.readlines())
 f.close()
 
-guesses = []
+fold_outputs = []
+
+fold = 1
+
 for train, test in kfold.split(data):
-    print("New tenfold iteration +++++++++++++++++++++++++++++++++++++++++++")
-    guess_iter = np.empty(len(data[test]))
+
+    TP_b = 0
+    TP_FN_b = 0
+    TP_FP_b = 0
+
+    TP_e = 0
+    TP_FN_e = 0
+    TP_FP_e = 0
+
+    TP_q = 0
+    TP_FN_q = 0
+    TP_FP_q = 0
+
+    print("New tenfold iteration: ", str(fold))
 
     print("Creating bug train file")
     b_tmp_train = open(b_path_train, "w", encoding="UTF-8")
@@ -81,7 +98,7 @@ for train, test in kfold.split(data):
     for i, line in enumerate(test_data):
         t = line.partition(' ')
         issue_text = t[2].replace('\n', '').replace('\r', '')
-        # print(issue_text)
+
         correct_answer = t[0]
         b_res = b_model.predict(issue_text, k=-1)
         e_res = e_model.predict(issue_text, k=-1)
@@ -99,10 +116,29 @@ for train, test in kfold.split(data):
 
         guess = max(res, key=res.get)
 
-        if guess == correct_answer:
-            guess_iter[i] = 1
-        else:
-            guess_iter[i] = 0
+        if guess == '__label__bug':
+            TP_FP_b += 1
+            if guess == correct_answer:
+                TP_b += 1
+
+        if guess == '__label__enhancement':
+            TP_FP_e += 1
+            if guess == correct_answer:
+                TP_e += 1
+
+        if guess == '__label__question':
+            TP_FP_q += 1
+            if guess == correct_answer:
+                TP_q += 1
+
+        if correct_answer == '__label__bug':
+            TP_FN_b += 1
+
+        if correct_answer == '__label__enhancement':
+            TP_FN_e += 1
+
+        if correct_answer == '__label__question':
+            TP_FN_q += 1
 
         print("Issue nr." + str(i) + " has predicted: ")
         print("Bug res: ", str(b_guess))
@@ -111,11 +147,63 @@ for train, test in kfold.split(data):
         print("Final guess: ", str(guess))
         print("Correct answer: ", correct_answer)
         print("-------------------------------------------------")
-    guesses.append(guess_iter)
+
+    b_recall = TP_b / TP_FN_b
+    b_precision = TP_b / TP_FP_b
+    b_f1 = 2 * ((b_precision * b_recall) / (b_precision + b_recall))
+
+    e_recall = TP_e / TP_FN_e
+    e_precision = TP_e / TP_FP_e
+    e_f1 = 2 * ((e_precision * e_recall) / (e_precision + e_recall))
+
+    q_recall = TP_q / TP_FN_q
+    q_precision = TP_q / TP_FP_q
+    q_f1 = 2 * ((q_precision * q_recall) / (q_precision + q_recall))
+
+    ges_recall = (b_recall + e_recall + q_recall) / 3
+    ges_precision = (b_precision + e_precision + q_precision) / 3
+    ges_f1 = (b_f1 + e_f1 + q_f1) / 3
+
+    result = {
+        '10-Fold iteration:': fold,
+        'Mean f1': ges_f1,
+        'Mean recall': ges_recall,
+        'Mean precision': ges_precision,
+        'Bug recall': b_recall,
+        'Bug precision': b_precision,
+        'Bug f1': b_f1,
+        'Enhancement recall': e_recall,
+        'Enhancement precision': e_precision,
+        'Enhancement f1': e_f1,
+        'Question recall': q_recall,
+        'Question precision': q_precision,
+        'Question f1': q_f1
+    }
+    print("Fold over, here are results: ")
+    print(json.dumps(result, indent=4))
+    fold_outputs.append(result)
+
+    fold += 1
 
 print("Done with 10 fold validation")
-print("Final guess matrix:")
-print(guesses)
+
+mean_recall = 0
+mean_precision = 0
+mean_f1 = 0
+for f in fold_outputs:
+    mean_f1 += (f['Mean f1'] / 10)
+    mean_recall += (f['Mean recall'] / 10)
+    mean_precision += (f['Mean precision'] / 10)
+
+output = {
+    'Results': {
+        'F1': mean_f1,
+        'Recall': mean_recall,
+        'Precision': mean_precision
+    },
+    'Details': fold_outputs
+}
+print(json.dumps(output, indent=4))
 
 # recall = TP/(TP+FN)
 # recall_bug = #final guess = bug && correct answer = bug / #correct answers = bug
@@ -124,7 +212,3 @@ print(guesses)
 # precision_bug = #final guess = bug && correct answer = bug / #final guess = bug
 
 # f1 = 2*((precision*recall)/(precision+recall))
-
-
-# store in array and display average
-
