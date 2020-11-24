@@ -2,6 +2,7 @@
 
 import sys
 import re
+import os
 
 
 def only(issue, label):
@@ -26,21 +27,25 @@ def only(issue, label):
 if __name__ == '__main__':
     print('* execute ' + sys.argv[0])
 
-    fn_in = sys.argv[1]
+    f_in = sys.argv[1]
+    fn_in = os.path.basename(f_in)
 
-    f_out_bug = open('BUG-' + fn_in, mode='w')
-    f_out_enhancement = open('ENHANCEMENT-' + fn_in, mode='w')
-    f_out_question = open('QUESTION-' + fn_in, mode='w')
+    dir_out = ""
+    if len(sys.argv) == 3:
+        dir_out = sys.argv[2]
 
-    with open(fn_in, mode='r') as f:
+    f_out_bug = open(dir_out + 'BUG-' + fn_in, mode='w', encoding="UTF-8")
+    f_out_enhancement = open(dir_out + 'ENHANCEMENT-' + fn_in, mode='w', encoding="UTF-8")
+    f_out_question = open(dir_out + 'QUESTION-' + fn_in, mode='w', encoding="UTF-8")
+
+    with open(f_in, mode='r', encoding="UTF-8") as f:
         cnt = 0
         for issue in f:
-            print('* check label of issue ' + str(cnt))
+            # print('* check label of issue ' + str(cnt))
             f_out_bug.write(only(issue, 'bug'))
             f_out_enhancement.write(only(issue, 'enhancement'))
             f_out_question.write(only(issue, 'question'))
             cnt += 1
-
 
     f_out_bug.close()
     f_out_enhancement.close()
