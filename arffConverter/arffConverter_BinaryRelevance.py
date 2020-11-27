@@ -1,20 +1,33 @@
-import numbers
-import random
+import os
+import sys
 
 if __name__ == '__main__':
-    ticketTaggerDataSet = open("data_set-pandas-balanced.txt", "r+", encoding="utf-8")
+    print('* execute ' + sys.argv[0])
+    # catch missing arguments
+    try:
+        a1 = sys.argv[1]
+        a2 = sys.argv[2]
+    except IndexError as error:
+        print('\033[91m' + "Could not read arguments. Please use the correct command format. Example command:")
+        print("python arffConverter_BinaryRelevance.py ./Input_BinaryRelevance.txt ./Output_BinaryRelevance.arff ")
+        exit()
+    # define paths
+    f_in = sys.argv[1]
+    f_out = sys.argv[2]
+
+    ticketTaggerDataSet = open(f_in, "r+", encoding="utf-8")
     ticketTaggerContent = ticketTaggerDataSet.read()
     ticketTaggerContent = ticketTaggerContent.split("__label__")
 
-    wekaDataSet = open("arff_notProcessed/BR-MEKA_pandas_balanced.arff", "w+", encoding="utf-8")
+    BR_ARFF_Dataset = open(f_out, "w+", encoding="utf-8")
 
-    wekaDataSet.write("@relation 'testFile: -C 3'\r\n")
-    wekaDataSet.write("@attribute issueText string\r")
-    wekaDataSet.write("@attribute __bug__ {0,1}\r")
-    wekaDataSet.write("@attribute __enhancement__ {0,1}\r")
-    wekaDataSet.write("@attribute __question__ {0,1}\r\n")
+    BR_ARFF_Dataset.write("@relation 'testFile: -C 3'\r\n")
+    BR_ARFF_Dataset.write("@attribute issueText string\r")
+    BR_ARFF_Dataset.write("@attribute __bug__ {0,1}\r")
+    BR_ARFF_Dataset.write("@attribute __enhancement__ {0,1}\r")
+    BR_ARFF_Dataset.write("@attribute __question__ {0,1}\r\n")
 
-    wekaDataSet.write("@data\r\n")
+    BR_ARFF_Dataset.write("@data\r\n")
 
     for issue in ticketTaggerContent[1:]:
         label = "invalidLabel"
@@ -37,11 +50,11 @@ if __name__ == '__main__':
         issueText = issueText.replace("\r", "")
         issueText = issueText
         if label == "__bug__":
-            wekaDataSet.write("\"" + issueText + " \"," + "1,0,0" + "\r")
+            BR_ARFF_Dataset.write("\"" + issueText + " \"," + "1,0,0" + "\r")
         elif label == "__enhancement__":
-            wekaDataSet.write("\"" + issueText + " \"," + "0,1,0" + "\r")
+            BR_ARFF_Dataset.write("\"" + issueText + " \"," + "0,1,0" + "\r")
         if label == "__question__":
-            wekaDataSet.write("\"" + issueText + " \"," + "0,0,1" + "\r")
+            BR_ARFF_Dataset.write("\"" + issueText + " \"," + "0,0,1" + "\r")
 
-    wekaDataSet.close()
+    BR_ARFF_Dataset.close()
     ticketTaggerDataSet.close()
