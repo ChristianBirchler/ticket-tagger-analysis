@@ -16,7 +16,7 @@ This folder is home to two fasttext classifiers. Both are tested with a fasttext
         
     python classifier.py <INPUT_DATASET.txt> <OUTPUT.json>
 
-### [Multi-Label-Binary Classifier](dump_issues.py)
+### [Multi-Label-Binary Classifier](ml_bin_classifier.py)
 
         
     python ml_bin_classifier.py <INPUT_DATASET.txt> <OUTPUT.json>
