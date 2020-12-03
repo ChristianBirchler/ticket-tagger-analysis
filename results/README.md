@@ -61,7 +61,7 @@ LogitBoost -P 100 -L-1.797…E308 -H 1.0 -Z3.0 -O1 -E1 -S1 -I 10 -W weka.classif
 
 
 
-### Comparison MEKA 
+### (Binary Relevance) Comparison MEKA 
 
 The MEKA project provides an open source implementation of methods for multi-label learning and evaluation.
 In multi-label classification, we want to predict multiple output variables for each input instance. 
