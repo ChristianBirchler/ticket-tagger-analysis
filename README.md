@@ -15,3 +15,24 @@ questions (33 - Question): 105
 enhancement (01 - Enhancement, 23 - Wish List): 1625
 bug (00 - Bug, 06 - Regression): 5170
 total: 6900
+
+
+
+# Tickettagger to WEKA/MEKA
+
+### Fasttext format to arff Converter
+
+Use the following commands in the directory of the converters. 
+
+###### For Multilabel arff data set
+
+```
+python arffConverter_Multilabel.py ./inputfile.txt ./outputname.arff
+```
+
+###### For Binary Relevance arff data set
+
+```
+python arffConverter_BinaryRelevance.py ./inputfile.txt ./outputname.arff
+```
+
