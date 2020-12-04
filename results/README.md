@@ -2,26 +2,32 @@
 
 ### Overview
 
-The content of this directory:
+Comparison_models_weka.xlsx 
+- The results of comparing various models in WEKA with the balanced pandas data set.
+    
+Comparing_preprocessing_weka.xlsx 
+- The results of comparing various models in WEKA with mutliple differently preprocessed data sets (balanced pa
 
-- Comparison_models_weka.xlsx
-    - The results of comparing various models in WEKA with the balanced pandas data set.
-- Comparing_preprocessing_weka.xlsx
-    - The results of comparing various models in WEKA with mutliple differently preprocessed data sets (balanced pandas data set)
-- MBL_pandas_benchmark.csv
-    - {insert description}
-- MBL_pandas_benchmark.txt
-    - {insert description}
-- ML_pandas_benchmark.txt
-    - {insert description}
-- original_vs_pandas.txt
-    - Here the ticket tagger results with data sets from two different repositories are compared
-- Preprocessing_boxplot.png
-    - Boxplot that shows F-Scores depending on the results of 'Comparing_preprocessing_weka.xlsx'
-- Preprocessing_boxplot_wobayes.png
-    - Boxplot that shows F-Scores depending on the results of 'Comparing_preprocessing_weka.xlsx' without the NaiveBayes model
-- WEKA&MEKA_F-Scores.xlsx
-    - The results of comparing different models in WEKA/MEKA with different data sets (and different repositories)
+MBL_pandas_benchmark.csv
+- {insert description}
+
+MBL_pandas_benchmark.txt
+- {insert description}
+
+ML_pandas_benchmark.txt
+- {insert description}
+
+original_vs_pandas.txt
+- Here the ticket tagger results with data sets from two different repositories are compared
+
+Preprocessing_boxplot.png
+- Boxplot that shows F-Scores depending on the results of 'Comparing_preprocessing_weka.xlsx'
+
+Preprocessing_boxplot_wobayes.png
+- Boxplot that shows F-Scores depending on the results of 'Comparing_preprocessing_weka.xlsx' without the NaiveBayes model
+
+WEKA&MEKA_F-Scores.xlsx
+- The results of comparing different models in WEKA/MEKA with different data sets (and different repositories)
 
 ### Title 1
 
