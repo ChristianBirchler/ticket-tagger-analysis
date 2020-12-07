@@ -39,7 +39,7 @@ Tasks Overview:
 
 
 ## Results
-The results are listed below. Also, an additional [readme discussing some of the results](./results/README.md) can
+The results are listed below. Also, an additional [readme](./results/README.md) discussing some of the results can
 be found in the results directory.
 
 Ticket Tagger Classification Performances:
