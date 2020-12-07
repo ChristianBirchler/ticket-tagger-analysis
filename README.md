@@ -10,9 +10,9 @@ will become very helpful.
 In this project we perform an empirical investigation of machine learning prediction strategies for issue types 
 classification on GitHub. First, the data is extended with the data set from the pandas repository. Then various preprocessing strategies (like stemming and stopword
 removal) are used on the pandas data set in order to explore the possibilities of Ticket Tagger. And finally all preprocessed and 
-unpreprocessed data sets are also evaluated in the WEKA and MEKA GUI, such that the results from the Ticket Tagger
+unpreprocessed data sets are also evaluated in the [WEKA](https://www.cs.waikato.ac.nz/ml/weka/) and [MEKA](https://waikato.github.io/meka/) GUI, such that the results from the Ticket Tagger
 software can be referenced and compared to the results of similar software. All results represent the evaluatlion metrics 
-of a 10-Fold cross validation. More specifically, the F-Score is the main metric that is compared in this project.
+of a 10-Fold [cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)). More specifically, the F-Score is the main metric that is compared in this project.
 
 
 RQ1: To what extent can we increase Performance?
@@ -48,7 +48,7 @@ Rafael_partial_english_rebalanced | 0.687
 Rafael_only_english_rebalanced | 0.550
 Pandas_balanced | 0.781		
 
-Multi Binary Classication Performances:
+Ticket Tagger Multi Binary Classication Performances:
 
 [*Multi Binary F-Score*](./results/MBL_pandas_benchmark.txt) | Multi Binary (Fasttext)
 --- | ---

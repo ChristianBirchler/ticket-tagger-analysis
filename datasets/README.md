@@ -1,23 +1,5 @@
 # Data
 
-### Title 1
-
-{insert raffael data set stuff}
-
-### Title 2
-
-{insert information of new repo (numpy) dataset}
-
-### Title 3 
-
-{inesrt preprocessing stuff}
-
-
-
-
-
-
-
 ### WEKA Data Set
 
 Located in the WEKA_Data_Set directory.
