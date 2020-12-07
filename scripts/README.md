@@ -11,10 +11,10 @@ This folder is home to two fasttext classifiers. Both are tested with a fasttext
  >Both classifiers use a fasttext text file data set as input and produce a json file with the results of the 10-fold validation.
 
 ### [Stock Classifier](./classifiers/classifier.py)
-    python classifier.py <INPUT_DATASET.txt> <OUTPUT.json>
+    $ python classifier.py <INPUT_DATASET.txt> <OUTPUT.json>
 
 ### [Multi-Label-Binary Classifier](./classifiers/ml_bin_classifier.py)
-    python ml_bin_classifier.py <INPUT_DATASET.txt> <OUTPUT.json>
+    $ python ml_bin_classifier.py <INPUT_DATASET.txt> <OUTPUT.json>
 
 ## [Data Acquisition](./data_acquisition)
 
@@ -33,13 +33,13 @@ If you want to use WEKA/MEKA, you will need to use the ARFF-Conversion scripts.
 
  >Make Sure to edit the variables `username` and `token` in the script to match your GitHub API credentials before using the script, as it will not work otherwise.
         
-    python dump_issues.py <OWNER_NAME> <REPO_NAME>
+    $ python dump_issues.py <OWNER_NAME> <REPO_NAME>
 
 ### [Fasttext Converter](./data_acquisition/json2fasttext.py)
-    python json2fasttext.py <INPUT.json> <OUTPUT.txt>
+    $ python json2fasttext.py <INPUT.json> <OUTPUT.txt>
 
 ### [Binary Data Set Splitter](./data_acquisition/create_binary_datasets.py)
-    python create_binary_datasets.py <INPUT.json> <OUTPUT.txt>
+    $ python create_binary_datasets.py <INPUT.json> <OUTPUT.txt>
 
 
 ### [Multilabel ARFF Conversion](./data_acquisition/arffConverter_Multilabel.py)
