@@ -42,7 +42,7 @@ be found in the results directory.
 
 Ticket Tagger Classification Performances:
 
-[*Data Set Comparison (F-Score)*](./results/Original_vs_pandas.txt) | Fasttext
+[*Data Set Comparison (F-Score)*](./results/original_vs_pandas.txt) | Fasttext
 --- | ---
 Rafael_partial_english_rebalanced | 0.687
 Rafael_only_english_rebalanced | 0.550
