@@ -11,11 +11,14 @@ The maintenance of a software project depends on issues. Large projects get a hi
 In this project, we perform an empirical investigation of machine learning prediction strategies for issue types classification on GitHub. First, the data is extended with the data set from the pandas' repository. Then various preprocessing strategies (like stemming and stopword removal) are used on the pandas' data set to explore the possibilities of Ticket Tagger. And finally, all preprocessed and not preprocessed data sets are also evaluated in the [WEKA](https://www.cs.waikato.ac.nz/ml/weka/) and [MEKA](https://waikato.github.io/meka/) GUI, such that the results from the Ticket Tagger software can be referenced and compared to the results of similar software. All results represent the evaluation metrics 
 of a 10-Fold [cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)). More specifically, the F-Score is the main metric that is compared in this project.
 
-## Experimental Design
+## Methodology
+Since our goal was to improve the performance of Ticket Tagger, the following research questions guided our project to reach that goal:
 
 >*RQ1*: To what extent can we increase Performance?
 
 >*RQ2*: Which tools and changes have the biggest positive impact?
+
+We provided separate README files with a detailed explanation of how we collected the data and performed the analysis. Below we provided an overview of tasks that are performed in our project.
 
 Tasks Overview:
 
