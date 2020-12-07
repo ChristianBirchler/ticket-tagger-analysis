@@ -29,17 +29,6 @@ Preprocessing_boxplot_wobayes.png
 WEKA&MEKA_F-Scores.xlsx
 - The results of comparing different models in WEKA/MEKA with different data sets (and different repositories)
 
-### Title 1
-
-
-
-### Title 2
-
-
-### Title 3 
-
-
-
 
 ## WEKA
 
