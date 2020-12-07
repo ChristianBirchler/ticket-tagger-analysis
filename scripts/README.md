@@ -48,7 +48,7 @@ Creates an arff data set, in which exactly one label has to be classified
 (either bug, enhancement or question). Use the commands below in the directory of the converters.
 
 ```
-python arffConverter_Multilabel.py <INPUT.txt> <OUTPUT.arff>
+$ python arffConverter_Multilabel.py <INPUT.txt> <OUTPUT.arff>
 ```
 > A `StringToWordVector filter` (found in the preprocessing section of the WEKA or MEKA GUI) must be applied to the 
 output files, because this preprocessing step is not done automatically.
@@ -59,7 +59,7 @@ The label we used in WEKA is split up, such
 that each possiblity is its own label (0 or 1).
 
 ```
-python arffConverter_BinaryRelevance.py <INPUT.txt> <OUTPUT.arff>
+$ python arffConverter_BinaryRelevance.py <INPUT.txt> <OUTPUT.arff>
 ```
 > A `StringToWordVector filter` (found in the preprocessing section of the WEKA or MEKA GUI) must be applied to the 
 output files, because this preprocessing step is not done automatically.
