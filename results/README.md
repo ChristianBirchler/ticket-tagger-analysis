@@ -129,7 +129,7 @@ In the original study Ticket Tagger ([Link to the original Repository](https://g
 The best result with Rafaels original dataset we achieved with RandomForest in WEKA. 
 The highest F-Score overall we got by using AdaBoost with  J48 on the Pandasdataset, this got us an F Score of 0.825. \
 We tried if we would get better results by using preprocessed datasets: 
-![Boxplot](Preprocessing_boxplot_wTicketTagger.png)<br>
+![Boxplot](preprocessing_boxplot_wTicketTagger.png)  
 In this plot we can see the distribution of F-scores for each model if Preprocessing 
 techniques are used. We used 12 different combinations of Preprocessing
 and ran them all for each model. In the above plot it can be observed 
