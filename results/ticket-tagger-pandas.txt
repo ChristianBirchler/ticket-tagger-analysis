@@ -1,0 +1,192 @@
+
+data_set-pandas-balanded.txt
+  stats  
+accuracy:  0.742
+   bug   
+precision:  0.806
+recall:  0.798
+f1 score:  0.801
+   enhancement   
+precision:  0.843
+recall:  0.520
+f1 score:  0.642
+   question   
+precision:  0.652
+recall:  0.909
+f1 score:  0.759
+
+data_set-pandas-balanded-PTB.txt
+  stats  
+accuracy:  0.630
+   bug   
+precision:  0.798
+recall:  0.408
+f1 score:  0.539
+   enhancement   
+precision:  0.789
+recall:  0.569
+f1 score:  0.661
+   question   
+precision:  0.517
+recall:  0.915
+f1 score:  0.660
+
+data_set-pandas-balanded-porter.txt
+  stats  
+accuracy:  0.720
+   bug   
+precision:  0.813
+recall:  0.785
+f1 score:  0.799
+   enhancement   
+precision:  0.902
+recall:  0.439
+f1 score:  0.590
+   question   
+precision:  0.603
+recall:  0.933
+f1 score:  0.732
+
+data_set-pandas-balanded-snowball.txt
+  stats  
+accuracy:  0.751
+   bug   
+precision:  0.763
+recall:  0.865
+f1 score:  0.810
+   enhancement   
+precision:  0.889
+recall:  0.509
+f1 score:  0.646
+   question   
+precision:  0.678
+recall:  0.878
+f1 score:  0.765
+
+data_set-pandas-balanded-stopword.txt
+  stats  
+accuracy:  0.742
+   bug   
+precision:  0.693
+recall:  0.911
+f1 score:  0.787
+   enhancement   
+precision:  0.921
+recall:  0.535
+f1 score:  0.675
+   question   
+precision:  0.708
+recall:  0.781
+f1 score:  0.742
+
+data_set-pandas-balanded-PTB-stopword.txt
+  stats  
+accuracy:  0.754
+   bug   
+precision:  0.777
+recall:  0.813
+f1 score:  0.794
+   enhancement   
+precision:  0.879
+recall:  0.544
+f1 score:  0.671
+   question   
+precision:  0.678
+recall:  0.904
+f1 score:  0.774
+
+data_set-pandas-balanded-porter-stopword.txt
+  stats  
+accuracy:  0.780
+   bug   
+precision:  0.804
+recall:  0.879
+f1 score:  0.839
+   enhancement   
+precision:  0.904
+recall:  0.572
+f1 score:  0.700
+   question   
+precision:  0.696
+recall:  0.885
+f1 score:  0.779
+
+data_set-pandas-balanded-stopword-porter.txt
+  stats  
+accuracy:  0.759
+   bug   
+precision:  0.778
+recall:  0.847
+f1 score:  0.810
+   enhancement   
+precision:  0.904
+recall:  0.529
+f1 score:  0.666
+   question   
+precision:  0.680
+recall:  0.900
+f1 score:  0.775
+
+data_set-pandas-balanded-PTB-stopword-porter.txt
+  stats  
+accuracy:  0.753
+   bug   
+precision:  0.777
+recall:  0.854
+f1 score:  0.813
+   enhancement   
+precision:  0.917
+recall:  0.498
+f1 score:  0.645
+   question   
+precision:  0.668
+recall:  0.904
+f1 score:  0.768
+
+data_set-pandas-balanded-snowball-stopword.txt
+  stats  
+accuracy:  0.737
+   bug   
+precision:  0.817
+recall:  0.790
+f1 score:  0.803
+   enhancement   
+precision:  0.925
+recall:  0.489
+f1 score:  0.639
+   question   
+precision:  0.620
+recall:  0.935
+f1 score:  0.744
+
+data_set-pandas-balanded-PTB-stopword-snowball.txt
+  stats  
+accuracy:  0.767
+   bug   
+precision:  0.825
+recall:  0.822
+f1 score:  0.823
+   enhancement   
+precision:  0.910
+recall:  0.568
+f1 score:  0.699
+   question   
+precision:  0.661
+recall:  0.914
+f1 score:  0.767
+
+data_set-pandas-balanded-stopword-snowball.txt
+  stats  
+accuracy:  0.794
+   bug   
+precision:  0.820
+recall:  0.866
+f1 score:  0.842
+   enhancement   
+precision:  0.890
+recall:  0.643
+f1 score:  0.745
+   question   
+precision:  0.716
+recall:  0.874
+f1 score:  0.787
