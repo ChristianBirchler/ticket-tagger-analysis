@@ -1,7 +1,11 @@
-# Project Introduction
+# Machine Learning Model Evaluations for GitHub Issue Classification
+
+# Abstract
+
+## Introduction
 
 
-[Ticket Tagger](https://github.com/rafaelkallis/ticket-tagger/tree/master/src) is a machine learning driven issue classification bot. It was written by Rafael Kallis
+[Ticket Tagger](https://github.com/rafaelkallis/ticket-tagger/tree/master/src) is a machine learning driven issue classification bot. It was written by [Rafael Kallis](https://github.com/rafaelkallis)
 in the scope of a project similar to this one. Once installed in your github repository, Ticket Tagger can
 be used to gain the benefit of autmatic issue classification. Small repositories may not gain much value from it, but
 once the repository grows to a point, where you get a large amount of issues in a short period of time, an automatic issue classification bot
