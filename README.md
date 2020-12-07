@@ -1,9 +1,14 @@
 # Machine Learning Model Evaluations for GitHub Issue Classification
 
-# Abstract
+## Abstract
+Issue labeling on large software projects is a time-consuming task. With classification models, it is feasible to automate this process. Ticket Tagger is a tool that enables issue labeling on GitHub with a fasttext classifier. In our project, we assess the evaluation of Ticket Tagger and compare it with other machine learning models. We collect issues of the pandas' open-source repository on GitHub and predict the labels. Different preprocessing techniques are applied and evaluated. Our results show that the preprocessing will affect the variability in the scores. With the right preprocessing technique it is possible to improve the current implementation of Ticket Tagger.
 
 ## Introduction
-
+- Problem of issue labeling
+- automation
+- machine learning
+- first implementation of ticket tagger
+- overview of the repository
 
 [Ticket Tagger](https://github.com/rafaelkallis/ticket-tagger/tree/master/src) is a machine learning driven issue classification bot. It was written by [Rafael Kallis](https://github.com/rafaelkallis)
 in the scope of a project similar to this one. Once installed in your github repository, Ticket Tagger can
@@ -18,14 +23,15 @@ unpreprocessed data sets are also evaluated in the [WEKA](https://www.cs.waikato
 software can be referenced and compared to the results of similar software. All results represent the evaluatlion metrics 
 of a 10-Fold [cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)). More specifically, the F-Score is the main metric that is compared in this project.
 
+## Experimental Design
 
-RQ1: To what extent can we increase Performance?
+>*RQ1*: To what extent can we increase Performance?
 
-RQ2: Which tools and changes have the biggest positive impact?
+>*RQ2*: Which tools and changes have the biggest positive impact?
 
-Task Overview:
+Tasks Overview:
 
-* Extend the the original studys
+* Extend the original study
     * Extend the original data set with another balanced real world data set
         * [Extract Issues Data](./scripts/README.md)
         * [Pandas Data Set](./datasets/README.md)
@@ -39,8 +45,9 @@ Task Overview:
         * Multi binary label classification
             * [Multi Binary Scripts](./scripts/README.md)
             * [Multi Binary Data Sets](./datasets/README.md)
-            
-         
+
+
+## Results
 The results are listed below. Also, an additional [readme discussing some of the results](./results/README.md) can
 be found in the results directory.
 
@@ -115,4 +122,13 @@ data_set-pandas-balanded-stopword | 0.742 | 0.814 | 0.823 | 0.762 | 0.647
 data_set-pandas-balanded-stopword-porter | 0.775 | 0.789 | 0.810  | 0.757 | 0.639
 data_set-pandas-balanded-stopword-snowball | 0.787 | 0.784 | 0.813 | 0.758 | 0.638
 
+
+## Discussion
+- interpretations: what do the results mean?
+- implications: why do the results matter?
+- limitations: what can't the results tell us?
+- recommendations: what practical actions or scientific studies should follow?
+
+
+## Conclusion
 
