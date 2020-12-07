@@ -1,10 +1,10 @@
 # Project Introduction
 
 
-Ticket Tagger is a machine learning driven issue classification bot. It was written by Rafael Kallis
+[Ticket Tagger](https://github.com/rafaelkallis/ticket-tagger/tree/master/src) is a machine learning driven issue classification bot. It was written by Rafael Kallis
 in the scope of a project similar to this one. Once installed in your github repository, Ticket Tagger can
 be used to gain the benefit of autmatic issue classification. Small repositories may not gain much value from it, but
-once the repository grows to a point, where you get thousands of issues per day, an automatic issue classification bot
+once the repository grows to a point, where you get a large amount of issues in a short period of time, an automatic issue classification bot
 will become very helpful. 
 
 In this project we perform an empirical investigation of machine learning prediction strategies for issue types 
@@ -36,32 +36,33 @@ Task Overview:
             * [Multi Binary Scripts](./scripts/README.md)
             * [Multi Binary Data Sets](./datasets/README.md)
             
-            
-[Results](./results/README.md):
+         
+The results are listed below. Also, an additional [readme discussing some of the results](./results/README.md) can
+be found in the results directory.
 
-Ticket Tagger Classification Performances (F-Score):
+Ticket Tagger Classification Performances:
 
-*F-Score* | Fasttext
+[*Data Set Comparison (F-Score)*](./results/Original_vs_pandas.txt) | Fasttext
 --- | ---
 Rafael_partial_english_rebalanced | 0.687
 Rafael_only_english_rebalanced | 0.550
 Pandas_balanced | 0.781		
 
-Multi Binary Classication Performances (F-Score):
+Multi Binary Classication Performances:
 
-*F-Score* | Multi Binary (Fasttext)
+[*Multi Binary F-Score*](./results/MBL_pandas_benchmark.txt) | Multi Binary (Fasttext)
 --- | ---
 Pandas_balanced | 0.745
 
 WEKA Multilabel Classification Performance:
 
-*Data Set Comparison (F-Score)* | J48 | RandomForest | NaiveBayer | AdaBoost | LogitBoost
+[*Data Set Comparison (F-Score)*](./results/WEKA&MEKA_F-Scores.xlsx) | J48 | RandomForest | NaiveBayer | AdaBoost | LogitBoost
 --- | --- | --- | --- | --- | ---
 Rafael_partial_english_rebalanced | 0.581 | 0.661 | 0.638 | 0.625 | 0.616
 Rafael_only_english_rebalanced | 0.559 | 0.68 | 0.576 | 0.649 | 0.64
-Rafael_only_english_rebalanced | 0.817 | 0.816 | 0.551 | 0.825 | 0.824
+Pandas_balanced | 0.817 | 0.816 | 0.551 | 0.825 | 0.824
 
-*Model Comparison (F-Score)* | Pandas_Balanced
+[*Model Comparison (F-Score)*](./results/Comparison_models_weka.xlsx) | Pandas_Balanced
 --- | --- 
 RandomTree | 0.661
 J48 | 0.817
@@ -73,39 +74,41 @@ Logit Boost with Decision Stump | 0.824
 AdaBoost with J48 | 0.825
 
 
-MEKA with Binary Releance (BR) 
+MEKA (Binary Relevance Algorithm) with different Data Sets (comparable to multi binary algorithm of Ticket Tagger)
 
-*F-Score micro averaged* | J48 | RandomForest | NaiveBayer 
+[*F-Score micro averaged*](./results/WEKA&MEKA_F-Scores.xlsx) | J48 | RandomForest | NaiveBayer 
 --- | --- | --- | ---
 Rafael_partial_english_rebalanced | 0.577 | 0.576 | 0.616
 Rafael_only_english_rebalanced | 0.593 | 0.590 | 0.635 
-Rafael_only_english_rebalanced | 0.793 | 0.801 | 0.679
+Pandas_balanced | 0.793 | 0.801 | 0.679
 
-*F-Score macro averaged by example* | J48 | RandomForest | NaiveBayer 
+[*F-Score macro averaged by example*](./results/WEKA&MEKA_F-Scores.xlsx) | J48 | RandomForest | NaiveBayer 
 --- | --- | --- | ---
 Rafael_partial_english_rebalanced | 0.505 | 0.465 | 0.607
 Rafael_only_english_rebalanced | 0.533 | 0.476 | 0.626 
-Rafael_only_english_rebalanced | 0.757 | 0.755 | 0.691
+Pandas_balanced | 0.757 | 0.755 | 0.691
 
-*F-Score macro averaged by label* | J48 | RandomForest | NaiveBayer 
+[*F-Score macro averaged by label*](./results/WEKA&MEKA_F-Scores.xlsx) | J48 | RandomForest | NaiveBayer 
 --- | --- | --- | ---
 Rafael_partial_english_rebalanced | 0.577 | 0.572 | 0.616
 Rafael_only_english_rebalanced | 0.593 | 0.587 | 0.635 
-Rafael_only_english_rebalanced | 0.793 | 0.800 | 0.681
+Pandas_balanced | 0.793 | 0.800 | 0.681
 
-Preprocessing
+Preprocessing the pandas data set for Ticket Tagger and WEKA/MEKA
 
-*F-Score* | Fasttext | J48 | Logit Boost | Hoeffding Tree | NaiveBayes
+*F-Score* (See: [[1]](./results/ticket-tagger-pandas.txt) [[2]](./results/Comparison_preprocessing_weka.xlsx)) | Fasttext | J48 | Logit Boost | Hoeffding Tree | NaiveBayes
 --- | --- | --- | --- | --- | ---
-data_set-pandas-balanded | 0.x | 0.799 | 0.824 | 0.732 | 0.645
-data_set-pandas-balanded-porter | 0.x | 0.748 | 0.810 | 0.759 | 0.643
-data_set-pandas-balanded-porter-stopword | 0.x | 0.790 | 0.810 | 0.755 | 0.635
-data_set-pandas-balanded-PTB | 0.x | 0.798 | 0.817 | 0.75 | 0.654
-data_set-pandas-balanded-PTB-stopword | 0.x | 0.81 | 0.822  | 0.751 | 0.647
-data_set-pandas-balanded-PTB-stopword-porter | 0.x | 0.792 | 0.811 | 0.743 | 0.637
-data_set-pandas-balanded-PTB-stopword-snowball | 0.x | 0.785 | 0.813 | 0.74 | 0.637
-data_set-pandas-balanded-snowball | 0.x | 0.789 | 0.812  | 0.754 | 0.642
-data_set-pandas-balanded-snowball-stopword | 0.x | 0.792 | 0.813 | 0.751 | 0.632
-data_set-pandas-balanded-stopword | 0.x | 0.814 | 0.823 | 0.762 | 0.647
-data_set-pandas-balanded-stopword-porter | 0.x | 0.789 | 0.810  | 0.757 | 0.639
-data_set-pandas-balanded-stopword-snowball | 0.x | 0.784 | 0.813 | 0.758 | 0.638
+data_set-pandas-balanded | 0.759 | 0.799 | 0.824 | 0.732 | 0.645
+data_set-pandas-balanded-porter | 0.732 | 0.748 | 0.810 | 0.759 | 0.643
+data_set-pandas-balanded-porter-stopword | 0.779 | 0.790 | 0.810 | 0.755 | 0.635
+data_set-pandas-balanded-PTB | 0.660 | 0.798 | 0.817 | 0.75 | 0.654
+data_set-pandas-balanded-PTB-stopword | 0.774 | 0.81 | 0.822  | 0.751 | 0.647
+data_set-pandas-balanded-PTB-stopword-porter | 0.768 | 0.792 | 0.811 | 0.743 | 0.637
+data_set-pandas-balanded-PTB-stopword-snowball | 0.767 | 0.785 | 0.813 | 0.74 | 0.637
+data_set-pandas-balanded-snowball | 0.765 | 0.789 | 0.812  | 0.754 | 0.642
+data_set-pandas-balanded-snowball-stopword | 0.744 | 0.792 | 0.813 | 0.751 | 0.632
+data_set-pandas-balanded-stopword | 0.742 | 0.814 | 0.823 | 0.762 | 0.647
+data_set-pandas-balanded-stopword-porter | 0.775 | 0.789 | 0.810  | 0.757 | 0.639
+data_set-pandas-balanded-stopword-snowball | 0.787 | 0.784 | 0.813 | 0.758 | 0.638
+
+
