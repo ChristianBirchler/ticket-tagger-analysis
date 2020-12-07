@@ -65,23 +65,41 @@ python arffConverter_BinaryRelevance.py <INPUT.txt> <OUTPUT.arff>
 output files, because this preprocessing step is not done automatically.
 
 ## [Stemming](./stemming)
-
-What is this? 
+Stemming is the process of reducing words to its stem or root (e.g., swims, swimming, and swam are reduced to swim). Some machine learning models perform better if we use the same data for words that are similar. So stemming is a simple technique to preprocess text-based data in order to have a better model performance.
 
 ### [Porter Stemming](./stemming/porter_stemming.py)
+The porter stemming algorithm is a well known technique in computer linguistics for stemming words. The algorithm is based on the idea to shorten a word with the objective to minimize the amount of syllables. Below you find the required python modules to run the script and you will also find an example.
 
- >Requirements
-        
-    EXAMPLECOMMAND
+Requirements:
+  - sys module
+  - re module
+  - nltk library
+
+```
+$ python porter_stemming.py file/path/to/stem output/path
+```
 
 ### [Snowball Stemming](./stemming/snowball_stemming.py)
+The snowball stemming algorithm is an improved version of the porter stemming algorithm. The key differences between those two algorithms are the following: The snowball stemmer is more agressive than the porter stemmer and the snowbal algorithms stems more accurately (e.g., fairly -> fair vs. fairly -> fairli).
 
- >Requirements
-        
-    EXAMPLECOMMAND
+Requirements:
+  - sys module
+  - re module
+  - nltk library
 
-### [Stopword Stemming](./stemming/stopword_stemming.py)
+```
+$ python snowball_stemming.py file/path/to/stem output/path
+```
 
- >Requirements
-        
-    EXAMPLECOMMAND
+### [Stopword Removal](./stemming/stopword_removal.py)
+Stopwords, words that are often used such as 'the', 'a', 'in' or 'in' can introduce some unnecessary noise to the data which do not help to model the classification. In order to increase the performance a stopord removal step can help. The algorithm to remove such stopwords is quite simple since it will check each word in the data if it is contained in a predefined list of known stopwords.
+
+Requirements:
+  - sys module
+  - re module
+  - nltk library
+
+```
+$ python stopword_removal.py file/path/to/stem output/path
+```
+
