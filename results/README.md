@@ -2,31 +2,31 @@
 
 ### Overview
 
-`Comparison_models_weka.xlsx`
+`Comparison_models_weka.xlsx`:
 - The results of comparing various models in WEKA with the balanced pandas data set.
     
-`Comparing_preprocessing_weka.xlsx `
+`Comparing_preprocessing_weka.xlsx`:
 - The results of comparing various models in WEKA with mutliple differently preprocessed data sets (balanced pa
 
-`MBL_pandas_benchmark.csv`
+`MBL_pandas_benchmark.csv`:
 - {insert description}
 
-`MBL_pandas_benchmark.txt`
+`MBL_pandas_benchmark.txt`:
 - {insert description}
 
-`ML_pandas_benchmark.txt`
+`ML_pandas_benchmark.txt`:
 - {insert description}
 
-`original_vs_pandas.txt`
+`original_vs_pandas.txt`:
 - Here the ticket tagger results with data sets from two different repositories are compared
 
-`Preprocessing_boxplot.png`
+`Preprocessing_boxplot.png`:
 - Boxplot that shows F-Scores depending on the results of `Comparing_preprocessing_weka.xlsx`
 
-`Preprocessing_boxplot_wobayes.png`
+`Preprocessing_boxplot_wobayes.png`:
 - Boxplot that shows F-Scores depending on the results of `Comparing_preprocessing_weka.xlsx` without the NaiveBayes model
 
-`WEKA&MEKA_F-Scores.xlsx`
+`WEKA&MEKA_F-Scores.xlsx`:
 - The results of comparing different models in WEKA/MEKA with different data sets (and different repositories)
 
 
@@ -119,13 +119,13 @@ We decided to compare the different models based on their F scores. In one table
 In the original study Ticket Tagger ([Link to the original Repository](https://github.com/rafaelkallis/ticket-tagger) ) has an average F-Score of 0.826. Out of all the models we tested 
  not one reached the 0.8 mark for this dataset.<br>
   
-  For the pandas dataset we tested we got better results:<br>
-   With Weka the following models passed the 0.8 mark: <br>
-  J48 <br> 
-  RandomForest <br>
-  AdaBoost<br> 
-  LogitBoost<br> 
-  With Binary Relevance in MEKA only RandomForest passed the 0.8 mark but J48 came close with up to 0.793. <br>
+For the pandas dataset we tested we got better results. With WEKA the following models passed the 0.8 mark:
+- J48
+- RandomForest
+- AdaBoost
+- LogitBoost
+
+With Binary Relevance in MEKA only RandomForest passed the 0.8 mark but J48 came close with up to 0.793. <br>
 The best result with Rafaels original dataset we achieved with RandomForest in WEKA. 
 The highest F-Score overall we got by using AdaBoost with  J48 on the Pandasdataset, this got us an F Score of 0.825. \
 We tried if we would get better results by using preprocessed datasets: 
