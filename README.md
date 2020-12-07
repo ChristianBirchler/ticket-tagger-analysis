@@ -14,7 +14,7 @@ of a 10-Fold [cross validation](https://en.wikipedia.org/wiki/Cross-validation_(
 ## Methodology
 Since our goal was to improve the performance of Ticket Tagger, the following research questions guided our project to reach that goal:
 
->*RQ1*: To what extent can we increase Performance?
+>*RQ1*: To what extent can we increase performance?
 
 >*RQ2*: Which tools and changes have the biggest positive impact?
 
@@ -76,7 +76,7 @@ Logit Boost with Decision Stump | 0.824
 AdaBoost with J48 | 0.825
 
 
-MEKA (Binary Relevance Algorithm) with different Data Sets (comparable to multi binary algorithm of Ticket Tagger)
+MEKA (Binary Relevance Algorithm) with different Data Sets (comparable to multi binary algorithm of Ticket Tagger):
 
 [*F-Score micro averaged*](./results/WEKA&MEKA_F-Scores.xlsx) | J48 | RandomForest | NaiveBayer 
 --- | --- | --- | ---
@@ -96,7 +96,7 @@ Rafael_partial_english_rebalanced | 0.577 | 0.572 | 0.616
 Rafael_only_english_rebalanced | 0.593 | 0.587 | 0.635 
 Pandas_balanced | 0.793 | 0.800 | 0.681
 
-Preprocessing the pandas data set for Ticket Tagger and WEKA/MEKA
+Preprocessing the pandas data set for Ticket Tagger and WEKA/MEKA:
 
 *F-Score* (See: [[1]](./results/ticket-tagger-pandas.txt) [[2]](./results/Comparison_preprocessing_weka.xlsx)) | Fasttext | J48 | Logit Boost | Hoeffding Tree | NaiveBayes
 --- | --- | --- | --- | --- | ---
@@ -119,6 +119,8 @@ data_set-pandas-balanded-stopword-snowball | 0.787 | 0.784 | 0.813 | 0.758 | 0.6
 - implications: why do the results matter?
 - limitations: what can't the results tell us?
 - recommendations: what practical actions or scientific studies should follow?
+
+
 
 
 ## Conclusion
