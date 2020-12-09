@@ -1,4 +1,16 @@
 # Machine Learning Model Evaluations for GitHub Issue Classification
+Issue labeling on GitHub is usually done manually by the developers. In order to automate this process a tool name Ticket Tagger was developed. It classifies the issues on GitHub by a fasttest classifier. The main problem or question we address in this repository is the following:
+>Can we increase the classification performance with different classifiers?
+>What changes in the data have an impact on the classifications?
+
+
+
+
+
+
+
+
+# OLD README
 
 ## Abstract
 Issue labeling on large software projects is a time-consuming task. With classification models, it is feasible to automate this process. Ticket Tagger is a tool that enables issue labeling on GitHub with a fasttext classifier. In our project, we assess the evaluation of Ticket Tagger and compare it with other machine learning models. We collect issues of the pandas' open-source repository on GitHub and predict the labels. Different preprocessing techniques are applied and evaluated. Our results show that the preprocessing will affect the variability in the scores. With the right preprocessing technique it is possible to improve the current implementation of Ticket Tagger.
