@@ -1,5 +1,32 @@
-# Scripts
+# Code Pipeline
 Here you will find all Python scripts created and used for this project. In this readme, you can read about their meaning, usage and restrictions. 
+
+      INSERT GIF HERE
+
+## Set-Up and Instructions
+
+### Tested Pre-Requisites
+- Memory: 8 GB
+- `Windows 10` and `Arch Linux`
+- [Python 3.7](https://www.python.org/downloads/release/python-370/)
+
+### Installation
+- Clone Repo
+- Install Dependencies either through [pip](https://pip.pypa.io/en/stable/) or [anaconda](https://docs.anaconda.com/)
+  - [fasttext](https://fasttext.cc/)
+  - [numpy](https://numpy.org/doc/)
+  - [sklearn](https://scikit-learn.org/)
+  - [nltk](https://www.nltk.org/)
+
+### Usage
+
+In general the scripts run by taking a input and output argument as follows:
+
+    $ python <SCRIPT_NAME> <INPUT_DATASET.txt> <OUTPUT.json>
+
+> Detailed example commands for each script can be found below
+
+# Scripts
 >Click on the headers to inspect the linked scripts / folders.
 
 ## [Classifiers](./classifiers)
