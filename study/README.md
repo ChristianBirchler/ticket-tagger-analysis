@@ -12,11 +12,11 @@ In this project, we perform an empirical investigation of machine learning predi
 of a 10-Fold [cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)). More specifically, the F-Score is the main metric that is compared in this project.
 
 ## Study Methodology
-Since our goal was to improve the performance of Ticket Tagger, the following research questions guided our project to reach that goal:
+Ticket Tagger can classify issues with the fasttext classifier. The fasttext classifier shows good performance so far. However, we are interested if we can do better with other classifiers. This leads us to the first research question:
+>*RQ1*: To what extent can we increase performance with other classifiers?
 
->*RQ1*: To what extent can we increase performance?
-
->*RQ2*: Which tools and changes have the biggest positive impact?
+Furthermore, Ticket Tagger does no data preprocessing which could affect the performance. Since there are various preprocessing techniques such as porter stemming, snowball stemming, and stopword removal we have also the following research question:
+>*RQ2*: To what extent do preprocessing techniques affect the models for issue classifications?
 
 We provided separate README files with a detailed explanation of how we collected the data and performed the analysis. Below we provided an overview of tasks that are performed in our project.
 
