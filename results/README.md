@@ -203,13 +203,13 @@ The best result with Rafaels original dataset we achieved with RandomForest in W
 The highest F-Score overall we got by using AdaBoost with  J48 on the Pandasdataset, this got us an F Score of 0.825. \
 We tried if we would get better results by using preprocessed datasets: 
 ![Boxplot](preprocessing_boxplot_TT_RF.png)  
-In this plot we can see the distribution of F-scores for each model if Preprocessing 
+In this plot we can see the distribution of F-scores for each model if preprocessing 
 techniques are used. We used 12 different combinations of Preprocessing
 and ran them all for each model. In the above plot it can be observed 
 that some of the models where more affected then others.
 There we can see that with some Preprocessing the F-score
-can be pushed up to the same level as logitboost. Ticket Tagger does get both high and low results with preprocessing. Ticket Tagger got the highest F-Score with the stopword-snowball preprocessing. PTB preprocessing resulted in the lowest F-score for Ticket Tagger.
- The If we look at our resulttable 
+can be pushed up to the same level as Logitboost. Ticket Tagger does get both high and low results with preprocessing. Ticket Tagger got the highest F-Score with the stopword-snowball preprocessing. PTB preprocessing resulted in the lowest F-score for Ticket Tagger.
+ The If we look at our result table 
 ([Link to the Table](Comparison_preprocessing_weka.xlsx)), the preprocessing method J48 performed the best with  is stopword. 
 For Logitboost preprocessing actually lowered the F-Score.  With Hoeffdingtree all Preprocessing did improve the F-Score, but here again the stopword preprocessing did the best. For the Naïve Bayes it was actually the PTB Preprocessing that improved the F-Score the most and some of the other methods even lowered the F-Score. 
 Overall AdaBoost and Logitboost did produce the best F-Scores but they are also by far the slowest models. 
