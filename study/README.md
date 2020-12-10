@@ -45,7 +45,7 @@ be found in the results directory.
 
 ## Conclusion
 With our results, we can give answers to the research questions:
->RQ1: With J48, Random Forest, Ada Boost, and Logit Boost we can reach an F-score of over 80% whereas Ticket Tagger has an F-score at most 79%.
+>RQ1: With J48, Random Forest, Ada Boost, and Logit Boost we can reach an F-score of over 80% whereas Ticket Tagger has an F-score at most 73%.
 
 >RQ2: The highest of F-scores depending on the preprocessing techniques we see for Ticket Tagger and its fasttext classifier. It varies between 66% and 79%. All other evaluated classifiers have a similar and a smaller variance for the F-score than Ticket Tagger.
 
