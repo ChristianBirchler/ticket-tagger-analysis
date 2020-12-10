@@ -12,11 +12,11 @@ In this project, we perform an empirical investigation of machine learning predi
 of a 10-Fold [cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)). More specifically, the F-Score is the main metric that is compared in this project.
 
 ## Study Methodology
-Since our goal was to improve the performance of Ticket Tagger, the following research questions guided our project to reach that goal:
+Ticket Tagger can classify issues with the fasttext classifier. The fasttext classifier shows good performance so far. However, we are interested if we can do better with other classifiers. This leads us to the first research question:
+>*RQ1*: To what extent can we increase performance with other classifiers?
 
->*RQ1*: To what extent can we increase performance?
-
->*RQ2*: Which tools and changes have the biggest positive impact?
+Furthermore, Ticket Tagger does no data preprocessing which could affect the performance. Since there are various preprocessing techniques such as porter stemming, snowball stemming, and stopword removal we have also the following research question:
+>*RQ2*: To what extent do preprocessing techniques affect the models for issue classifications?
 
 We provided separate README files with a detailed explanation of how we collected the data and performed the analysis. Below we provided an overview of tasks that are performed in our project.
 
@@ -44,4 +44,9 @@ be found in the results directory.
 
 
 ## Conclusion
+With our results, we can give answers to the research questions:
+>RQ1: With J48, Random Forest, Ada Boost, and Logit Boost we can reach an F-score of over 80% whereas Ticket Tagger has an F-score at most 79%.
 
+>RQ2: The highest of F-scores depending on the preprocessing techniques we see for Ticket Tagger and its fasttext classifier. It varies between 66% and 79%. All other evaluated classifiers have a similar and a smaller variance for the F-score than Ticket Tagger.
+
+In this project, we first collect new issue data from one repository namely pandas. We looked at different classifiers and compared them with the Ticket Tagger. We found out that in our case it is possible to increase the performance of Ticket Tagger if we use a more appropriate classifier. We would be happy if other researchers could replicate our study to confirm our findings. Also, evaluations with more preprocessing techniques could be applied since we believe that it is possible to gain more performance increase with other techniques.
