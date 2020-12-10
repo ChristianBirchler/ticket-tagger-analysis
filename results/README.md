@@ -228,10 +228,16 @@ In our project, we are interested if we can increase the performance of Ticket T
 - Ada Boost
 - Logit Boost
 
-With these models, it is possible to enhance the process of issue labeling. In the context of large software projects, it could save a significant amount of money.
+With these models, it is possible to enhance the process of issue labeling. This result matters in the context of large software projects, it could save a significant amount of money. The developers do not need to spend working hours on manual labeling.
 
-The results show also the impact of the different preprocessing techniques on the performance.
+The results show also the impact of the different preprocessing techniques on the performance. This is a relevant observation because the original implementation of Ticket Tagger does not perform preprocessing at all.
 
+The results also show some limitations. We can not ensure that the performances of J48, Random Forest, Ada Boost, and Logit Boost are the best for the majority of repositories. We assessed in our study only issues of the pandas' repository which fulfills the following conditions:
+- Over 1'000 issues per label (bug, enhancement, question)
+- Issues are written in English
+- The project does not use the Java Ecosystem
+
+We have the hope that future work will replicate our findings of the study. Furthermore, a more diverse validation set of issues of different projects would lead to higher confidence in the results.
 
 
 
