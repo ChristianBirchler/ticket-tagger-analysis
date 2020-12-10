@@ -38,7 +38,7 @@ Tasks Overview:
             * [Multi Binary Data Sets](./datasets/README.md)
 
 
-## Results
+## Results / Discussion
 The results are listed below. Also, an additional [readme](./results/README.md) discussing some of the results can
 be found in the results directory.
 

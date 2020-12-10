@@ -215,8 +215,24 @@ For Logitboost preprocessing actually lowered the F-Score.  With Hoeffdingtree a
 Overall AdaBoost and Logitboost did produce the best F-Scores but they are also by far the slowest models. 
 
 
+## Discussion
 
+- interpretations: what do the results mean?
+- implications: why do the results matter?
+- limitations: what can't the results tell us?
+- recommendations: what practical actions or scientific studies should follow?
 
+In our project, we are interested if we can increase the performance of Ticket Tagger. Our results show that the performance of Ticket Tagger is worse with our train and test dataset. So in our setting with data from the pandas project we have models that outperform the fasttext classifier used by Ticket Tagger. The following models would indeed improve the performance of Ticket Tagger:
+- J48
+- Random Forest
+- Ada Boost
+- Logit Boost
+
+With these models, it is possible to enhance the process of issue labeling. In the context of large software projects, it could save a significant amount of money.
+
+The results show also the impact of the different preprocessing techniques on the performance.
+
+> LINK TO TABLES IN RESULTs
 
 
 
