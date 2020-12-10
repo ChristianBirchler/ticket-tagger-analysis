@@ -1,6 +1,6 @@
 # Results
 
-### Overview
+## Overview
 
 `Comparison_models_weka.xlsx`:
 - The results of comparing various models in WEKA with the balanced pandas data set.
@@ -40,33 +40,33 @@ with Boost Models (AdaBoost, LogitBoost) is also taken into account when compari
 
 For every evaluation, the WEKA default configuration for 10-fold Cross Validation was used.
 
-#### J48 
+### J48 
 
 Classification Configuration: 
 ```
 J48 -C 0.25 -M 2
 ```
 
-#### RandomForest
+### RandomForest
 
 Classification Configuration: 
 ```
 RandomeForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
 ```
 
-#### NaiveBayes
+### NaiveBayes
 
 Classification Configuration: none
 
 
-#### AdaBoost (with J48)
+### AdaBoost (with J48)
 
 Classification Configuration: 
 ```
 AdaBoostM1 -P 100 -S1 -I 10- weka.classifiers.trees.J48 --C 0.25 -M 2
 ```
 
-#### LogitBoost (with DecisionStump)
+### LogitBoost (with DecisionStump)
 
 Classification Configuration: 
 ```
@@ -90,14 +90,14 @@ we compare the multibinary results from fasttext and the binary relevance result
 
 For every evaluation, the MEKA default configuration for 10-fold Cross Validation was used.
 
-#### J48 
+### J48 
 
 Classification Configuration: 
 ```
 BR – W weka.classifier.trees.J48 -- -C 0.25 -M 2
 ```
 
-#### RandomForest
+### RandomForest
 
 Classification Configuration: 
 ```
@@ -105,12 +105,12 @@ BR – W weka.classifier.trees.RandomForest -- -I 100 -K 0 -S 1 -num-slots 1
 ```
 
 
-#### NaiveBayes
+### NaiveBayes
 
 Classification Configuration: none
 
 
-# Tables
+## Tables
 
 Ticket Tagger Classification Performances:
 
@@ -203,19 +203,34 @@ The best result with Rafaels original dataset we achieved with RandomForest in W
 The highest F-Score overall we got by using AdaBoost with  J48 on the Pandasdataset, this got us an F Score of 0.825. \
 We tried if we would get better results by using preprocessed datasets: 
 ![Boxplot](preprocessing_boxplot_TT_RF.png)  
-In this plot we can see the distribution of F-scores for each model if Preprocessing 
+In this plot we can see the distribution of F-scores for each model if preprocessing 
 techniques are used. We used 12 different combinations of Preprocessing
 and ran them all for each model. In the above plot it can be observed 
 that some of the models where more affected then others.
 There we can see that with some Preprocessing the F-score
-can be pushed up to the same level as logitboost. Ticket Tagger does get both high and low results with preprocessing. Ticket Tagger got the highest F-Score with the stopword-snowball preprocessing. PTB preprocessing resulted in the lowest F-score for Ticket Tagger.
- The If we look at our resulttable 
+can be pushed up to the same level as Logitboost. Ticket Tagger does get both high and low results with preprocessing. Ticket Tagger got the highest F-Score with the stopword-snowball preprocessing. PTB preprocessing resulted in the lowest F-score for Ticket Tagger.
+ The If we look at our result table 
 ([Link to the Table](Comparison_preprocessing_weka.xlsx)), the preprocessing method J48 performed the best with  is stopword. 
 For Logitboost preprocessing actually lowered the F-Score.  With Hoeffdingtree all Preprocessing did improve the F-Score, but here again the stopword preprocessing did the best. For the Naïve Bayes it was actually the PTB Preprocessing that improved the F-Score the most and some of the other methods even lowered the F-Score. 
 Overall AdaBoost and Logitboost did produce the best F-Scores but they are also by far the slowest models. 
 
 
+# Discussion
 
+- interpretations: what do the results mean?
+- implications: why do the results matter?
+- limitations: what can't the results tell us?
+- recommendations: what practical actions or scientific studies should follow?
+
+In our project, we are interested if we can increase the performance of Ticket Tagger. Our results show that the performance of Ticket Tagger is worse with our train and test dataset. So in our setting with data from the pandas project we have models that outperform the fasttext classifier used by Ticket Tagger. The following models would indeed improve the performance of Ticket Tagger:
+- J48
+- Random Forest
+- Ada Boost
+- Logit Boost
+
+With these models, it is possible to enhance the process of issue labeling. In the context of large software projects, it could save a significant amount of money.
+
+The results show also the impact of the different preprocessing techniques on the performance.
 
 
 

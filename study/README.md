@@ -11,7 +11,7 @@ The maintenance of a software project depends on issues. Large projects get a hi
 In this project, we perform an empirical investigation of machine learning prediction strategies for issue types classification on GitHub. First, the data is extended with the data set from the pandas' repository. Then various preprocessing strategies (like stemming and stopword removal) are used on the pandas' data set to explore the possibilities of Ticket Tagger. And finally, all preprocessed and not preprocessed data sets are also evaluated in the [WEKA](https://www.cs.waikato.ac.nz/ml/weka/) and [MEKA](https://waikato.github.io/meka/) GUI, such that the results from the Ticket Tagger software can be referenced and compared to the results of similar software. All results represent the evaluation metrics 
 of a 10-Fold [cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)). More specifically, the F-Score is the main metric that is compared in this project.
 
-## Methodology
+## Study Methodology
 Since our goal was to improve the performance of Ticket Tagger, the following research questions guided our project to reach that goal:
 
 >*RQ1*: To what extent can we increase performance?
@@ -38,27 +38,10 @@ Tasks Overview:
             * [Multi Binary Data Sets](./datasets/README.md)
 
 
-## Results
-The results are listed below. Also, an additional [readme](./results/README.md) discussing some of the results can
+## Results / Discussion
+The results are listed below. Also, an additional [readme](../results/README.md) discussing some of the results can
 be found in the results directory.
 
-## Discussion
-- interpretations: what do the results mean?
-- implications: why do the results matter?
-- limitations: what can't the results tell us?
-- recommendations: what practical actions or scientific studies should follow?
-
-In our project, we are interested if we can increase the performance of Ticket Tagger. Our results show that the performance of Ticket Tagger is worse with our train and test dataset. So in our setting with data from the pandas project we have models that outperform the fasttext classifier used by Ticket Tagger. The following models would indeed improve the performance of Ticket Tagger:
-- J48
-- Random Forest
-- Ada Boost
-- Logit Boost
-
-With these models, it is possible to enhance the process of issue labeling. In the context of large software projects, it could save a significant amount of money.
-
-The results show also the impact of the different preprocessing techniques on the performance.
-
-> LINK TO TABLES IN RESULTs
 
 ## Conclusion
 
