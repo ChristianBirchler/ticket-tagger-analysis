@@ -44,4 +44,13 @@ be found in the results directory.
 
 
 ## Conclusion
+- Clearly state the answer to the main research question
+- Summarize and reflect on the research
+- Make recommendations for future work on the topic
+- Show what new knowledge you have contributed
 
+With our results, we can give answers to the research questions:
+>RQ1: With J48, Random Forest, Ada Boost, and Logit Boost we can reach an F-score of over 80% whereas Ticket Tagger has an F-score at most 79%.
+>RQ2: The highest of F-scores depending on the preprocessing techniques we see for Ticket Tagger and its fasttext classifier. It varies between 66% and 79%. All other evaluated classifiers have a similar and a smaller variance for the F-score than Ticket Tagger.
+
+In this project, we first collect new issue data from one repository namely pandas. We looked at different classifiers and compared them with the Ticket Tagger. We found out that in our case it is possible to increase the performance of Ticket Tagger if we use a more appropriate classifier. We would be happy if other researchers could replicate our study to confirm our findings. Also, evaluations with more preprocessing techniques could be applied since we believe that it is possible to gain more performance increase with other techniques.
