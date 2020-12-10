@@ -10,34 +10,22 @@
 <table style="width:100%; border-collapse:collapse; border: 0;">
   <tr>
     <td>
-        <a href="https://github.com/TimDeanMoser">
-            <h3 align="center">Tim Moser</h3>
-        </a>
+        <h3 align="center"><a href="https://github.com/TimDeanMoser">Tim Moser</a></h3>
     </td>
     <td>
-        <a href="https://github.com/LeguDave">
-            <h3 align="center">David Steiger</h3>
-        </a>
+        <h3 align="center"><a href="https://github.com/LeguDave">David Steiger</a></h3>
     </td>
     <td>
-        <a href="https://github.com/ChristianBirchler">
-            <h3 align="center">Christian Birchler</h3>
-        </a>
+        <h3 align="center"><a href="https://github.com/ChristianBirchler">Christian Birchler</a></h3>
     </td>
     <td>
-        <a href="https://github.com/LaraFr">
-            <h3 align="center">Lara Fried</h3>
-        </a>
+        <h3 align="center"><a href="https://github.com/LaraFr">Lara Fried</a></h3>
     </td>
     <td>
-        <a href="https://github.com/spanichella">
-            <h3 align="center">Sebastiano Panichella</h3>
-        </a>
+        <h3 align="center"><a href="https://github.com/spanichella">Sebastiano Panichella</a></h3>
     </td>
     <td>
-        <a href="https://github.com/rafaelkallis">
-            <h3 align="center">Rafael Kallis</h3>
-        </a>
+        <h3 align="center"><a href="https://github.com/rafaelkallis">Rafael Kallis</a></h3>
     </td>
   </tr>
   <tr>
