@@ -22,7 +22,7 @@ the MEKA GUI will only return the correct evaluation metrics if the data set cor
 binary relevance strategy.
 
 ## Crawler
-The crawler directory contains the raw data pulled from the pandas' GitHub repository by the [script](../scripts/data_acquisition/dump_issues.py).
+The crawler directory contains the raw data pulled from the pandas' GitHub repository by the [script](../code-pipeline/data_acquisition/dump_issues.py).
 
 ## Pandas
 The formatted data sets of the issues on the pandas' GitHub repository can be found here. One version is a balanced data set which is mainly used for our further usage.
