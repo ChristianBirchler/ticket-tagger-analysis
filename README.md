@@ -23,7 +23,7 @@
     </div>
     <div style="float: left; padding: 5px;">
     <h3 float="center">Sebastiano Panichella</h3>
-    <img src="https://avatars0.githubusercontent.com/u/16851659?s=460&u=c497742216ad73fbf1f4ff00867a56a19beeae85&v=4" width="150" />
+    <img src="https://avatars1.githubusercontent.com/u/5339914?s=460&u=ea140c59718ae85b6b33fa97cabb4232a084f30a&v=4" width="150" />
     </div>
     <div style="float: left; padding: 5px;">
     <h3 float="center">Rafael Kallis</h3>
@@ -31,6 +31,49 @@
     </div>
 </div>
 <div style="clear: both;"></div>
+
+
+<table style="width:100%">
+  
+  <tr>
+    <td>
+        <div style="float: left; padding: 5px">
+            <h3 float="center">Tim Moser</h3>
+            <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="150" />
+        </div>
+    </td>
+    <td>
+        <div style="float: left; padding: 5px">
+            <h3 float="center">Tim Moser</h3>
+            <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="150" />
+        </div>
+    </td>
+    <td>
+        <div style="float: left; padding: 5px">
+            <h3 float="center">Tim Moser</h3>
+            <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="150" />
+        </div>
+    </td>
+    <td>
+        <div style="float: left; padding: 5px">
+            <h3 float="center">Tim Moser</h3>
+            <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="150" />
+        </div>
+    </td>
+    <td>
+        <div style="float: left; padding: 5px">
+            <h3 float="center">Tim Moser</h3>
+            <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="150" />
+        </div>
+    </td>
+    <td>
+        <div style="float: left; padding: 5px">
+            <h3 float="center">Tim Moser</h3>
+            <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="150" />
+        </div>
+    </td>
+  </tr>
+</table>
 
 
 ## Table of Contents
