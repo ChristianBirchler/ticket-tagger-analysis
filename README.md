@@ -10,54 +10,66 @@
 <table style="width:100%; border-collapse:collapse; border: 0;">
   <tr>
     <td>
+        <a href="https://github.com/TimDeanMoser">
             <h3 align="center">Tim Moser</h3>
+        </a>
     </td>
     <td>
+        <a href="https://github.com/LeguDave">
             <h3 align="center">David Steiger</h3>
+        </a>
     </td>
     <td>
+        <a href="https://github.com/ChristianBirchler">
             <h3 align="center">Christian Birchler</h3>
+        </a>
     </td>
     <td>
+        <a href="https://github.com/LaraFr">
             <h3 align="center">Lara Fried</h3>
+        </a>
     </td>
     <td>
+        <a href="https://github.com/spanichella">
             <h3 align="center">Sebastiano Panichella</h3>
+        </a>
     </td>
     <td>
+        <a href="https://github.com/rafaelkallis">
             <h3 align="center">Rafael Kallis</h3>
+        </a>
     </td>
   </tr>
   <tr>
     <td>
-            <a href="https://github.com/TimDeanMoser">
+        <a href="https://github.com/TimDeanMoser">
             <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="100%" />
-            </a>
+        </a>
     </td>
     <td>
-            <a href="https://github.com/LeguDave">
+        <a href="https://github.com/LeguDave">
             <img src="https://avatars2.githubusercontent.com/u/55451472?s=460&u=0728bfc37d68f34357ac2825ae14a4af715c6ebd&v=4" width="100%" />
-            </a>
+        </a>
     </td>
     <td>
-            <a href="https://github.com/ChristianBirchler">
+        <a href="https://github.com/ChristianBirchler">
             <img src="https://avatars0.githubusercontent.com/u/33133633?s=460&u=0c04c3ba77c1a999f0d087646c38b4902a1c665a&v=4" width="100%" />
-            </a>
+        </a>
     </td>
     <td>
-            <a href="https://github.com/LaraFr">
+        <a href="https://github.com/LaraFr">
             <img src="https://avatars3.githubusercontent.com/u/34027454?s=460&v=4" width="100%" />
-            </a>
+        </a>
     </td>
     <td>
-            <a href="https://github.com/spanichella">
+        <a href="https://github.com/spanichella">
             <img src="https://avatars1.githubusercontent.com/u/5339914?s=460&u=ea140c59718ae85b6b33fa97cabb4232a084f30a&v=4" width="100%" />
-            </a>
+        </a>
     </td>
     <td>
-            <a href="https://github.com/rafaelkallis">
+        <a href="https://github.com/rafaelkallis">
             <img src="https://avatars3.githubusercontent.com/u/9661903?s=460&u=ae6e33f486ad0fed762cb7d8f1e07d4540130b27&v=4" width="100%" />
-            </a>
+        </a>
     </td>
   </tr>
 </table>
