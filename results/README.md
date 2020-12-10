@@ -110,38 +110,6 @@ BR – W weka.classifier.trees.RandomForest -- -I 100 -K 0 -S 1 -num-slots 1
 Classification Configuration: none
 
 
-
-## Comparison TicketTagger to WEKA and MEKA
-
-We decided to compare the different models based on their F scores. In one table ([Link to the table](WEKA&MEKA_F-Scores.xlsx)) we compared
- the three models J48, RandomForest and Naïve Bayes for three different datasets.
-  We took the original dataset used for Ticket Tagger, an only English version of this dataset and a completely different dataset. 
-In the original study Ticket Tagger ([Link to the original Repository](https://github.com/rafaelkallis/ticket-tagger) ) has an average F-Score of 0.826. Out of all the models we tested 
- not one reached the 0.8 mark for this dataset.<br>
-  
-For the pandas dataset we tested we got better results. With WEKA the following models passed the 0.8 mark:
-- J48
-- RandomForest
-- AdaBoost
-- LogitBoost
-
-With Binary Relevance in MEKA only RandomForest passed the 0.8 mark but J48 came close with up to 0.793. <br>
-The best result with Rafaels original dataset we achieved with RandomForest in WEKA. 
-The highest F-Score overall we got by using AdaBoost with  J48 on the Pandasdataset, this got us an F Score of 0.825. \
-We tried if we would get better results by using preprocessed datasets: 
-![Boxplot](preprocessing_boxplot_TT_RF.png)  
-In this plot we can see the distribution of F-scores for each model if Preprocessing 
-techniques are used. We used 12 different combinations of Preprocessing
-and ran them all for each model. In the above plot it can be observed 
-that some of the models where more affected then others.
-There we can see that with some Preprocessing the F-score
-can be pushed up to the same level as logitboost. Ticket Tagger does get both high and low results with preprocessing. Ticket Tagger got the highest F-Score with the stopword-snowball preprocessing. PTB preprocessing resulted in the lowest F-score for Ticket Tagger.
- The If we look at our resulttable 
-([Link to the Table](Comparison_preprocessing_weka.xlsx)), the preprocessing method J48 performed the best with  is stopword. 
-For Logitboost preprocessing actually lowered the F-Score.  With Hoeffdingtree all Preprocessing did improve the F-Score, but here again the stopword preprocessing did the best. For the Naïve Bayes it was actually the PTB Preprocessing that improved the F-Score the most and some of the other methods even lowered the F-Score. 
-Overall AdaBoost and Logitboost did produce the best F-Scores but they are also by far the slowest models. 
-
-
 # Tables
 
 Ticket Tagger Classification Performances:
@@ -214,6 +182,38 @@ data_set-pandas-balanded-snowball-stopword | 0.744 | 0.792 | 0.813 | 0.751 | 0.6
 data_set-pandas-balanded-stopword | 0.742 | 0.814 | 0.823 | 0.762 | 0.647
 data_set-pandas-balanded-stopword-porter | 0.775 | 0.789 | 0.810  | 0.757 | 0.639
 data_set-pandas-balanded-stopword-snowball | 0.787 | 0.784 | 0.813 | 0.758 | 0.638
+
+
+## Comparison TicketTagger to WEKA and MEKA
+
+We decided to compare the different models based on their F scores. In one table ([Link to the table](WEKA&MEKA_F-Scores.xlsx)) we compared
+ the three models J48, RandomForest and Naïve Bayes for three different datasets.
+  We took the original dataset used for Ticket Tagger, an only English version of this dataset and a completely different dataset. 
+In the original study Ticket Tagger ([Link to the original Repository](https://github.com/rafaelkallis/ticket-tagger) ) has an average F-Score of 0.826. Out of all the models we tested 
+ not one reached the 0.8 mark for this dataset.<br>
+  
+For the pandas dataset we tested we got better results. With WEKA the following models passed the 0.8 mark:
+- J48
+- RandomForest
+- AdaBoost
+- LogitBoost
+
+With Binary Relevance in MEKA only RandomForest passed the 0.8 mark but J48 came close with up to 0.793. <br>
+The best result with Rafaels original dataset we achieved with RandomForest in WEKA. 
+The highest F-Score overall we got by using AdaBoost with  J48 on the Pandasdataset, this got us an F Score of 0.825. \
+We tried if we would get better results by using preprocessed datasets: 
+![Boxplot](preprocessing_boxplot_TT_RF.png)  
+In this plot we can see the distribution of F-scores for each model if Preprocessing 
+techniques are used. We used 12 different combinations of Preprocessing
+and ran them all for each model. In the above plot it can be observed 
+that some of the models where more affected then others.
+There we can see that with some Preprocessing the F-score
+can be pushed up to the same level as logitboost. Ticket Tagger does get both high and low results with preprocessing. Ticket Tagger got the highest F-Score with the stopword-snowball preprocessing. PTB preprocessing resulted in the lowest F-score for Ticket Tagger.
+ The If we look at our resulttable 
+([Link to the Table](Comparison_preprocessing_weka.xlsx)), the preprocessing method J48 performed the best with  is stopword. 
+For Logitboost preprocessing actually lowered the F-Score.  With Hoeffdingtree all Preprocessing did improve the F-Score, but here again the stopword preprocessing did the best. For the Naïve Bayes it was actually the PTB Preprocessing that improved the F-Score the most and some of the other methods even lowered the F-Score. 
+Overall AdaBoost and Logitboost did produce the best F-Scores but they are also by far the slowest models. 
+
 
 
 
