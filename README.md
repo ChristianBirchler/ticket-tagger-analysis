@@ -4,73 +4,48 @@
 
 ## Collaborators
 
- <div style="float: left; padding: 5px; width=100%;">
-    <div style="float: left; padding: 5px">
-    <h3 float="center">Tim Moser</h3>
-    <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="150" />
-    </div>
-    <div style="float: left; padding: 5px;">
-    <h3 float="center">David Steiger</h3>
-    <img src="https://avatars2.githubusercontent.com/u/55451472?s=460&u=0728bfc37d68f34357ac2825ae14a4af715c6ebd&v=4" width="150" />
-    </div>
-    <div style="float: left; padding: 5px;">
-    <h3 float="center">Christian Birchler</h3>
-    <img src="https://avatars0.githubusercontent.com/u/33133633?s=460&u=0c04c3ba77c1a999f0d087646c38b4902a1c665a&v=4" width="150" />
-    </div>
-    <div style="float: left; padding: 5px;">
-    <h3 float="center">Lara Fried</h3>
-    <img src="https://avatars3.githubusercontent.com/u/34027454?s=460&v=4" width="150" />
-    </div>
-    <div style="float: left; padding: 5px;">
-    <h3 float="center">Sebastiano Panichella</h3>
-    <img src="https://avatars1.githubusercontent.com/u/5339914?s=460&u=ea140c59718ae85b6b33fa97cabb4232a084f30a&v=4" width="150" />
-    </div>
-    <div style="float: left; padding: 5px;">
-    <h3 float="center">Rafael Kallis</h3>
-    <img src="https://avatars3.githubusercontent.com/u/9661903?s=460&u=ae6e33f486ad0fed762cb7d8f1e07d4540130b27&v=4" width="150" />
-    </div>
-</div>
-<div style="clear: both;"></div>
 
 
-<table style="width:100%">
-  
+
+<table style="width:100%; border-collapse:collapse; border: 0;">
   <tr>
     <td>
-        <div style="float: left; padding: 5px">
-            <h3 float="center">Tim Moser</h3>
-            <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="150" />
-        </div>
+            <h3 align="center">Tim Moser</h3>
     </td>
     <td>
-        <div style="float: left; padding: 5px">
-            <h3 float="center">Tim Moser</h3>
-            <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="150" />
-        </div>
+            <h3 align="center">David Steiger</h3>
     </td>
     <td>
-        <div style="float: left; padding: 5px">
-            <h3 float="center">Tim Moser</h3>
-            <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="150" />
-        </div>
+            <h3 align="center">Christian Birchler</h3>
     </td>
     <td>
-        <div style="float: left; padding: 5px">
-            <h3 float="center">Tim Moser</h3>
-            <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="150" />
-        </div>
+            <h3 align="center">Lara Fried</h3>
     </td>
     <td>
-        <div style="float: left; padding: 5px">
-            <h3 float="center">Tim Moser</h3>
-            <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="150" />
-        </div>
+            <h3 align="center">Sebastiano Panichella</h3>
     </td>
     <td>
-        <div style="float: left; padding: 5px">
-            <h3 float="center">Tim Moser</h3>
+            <h3 align="center">Rafael Kallis</h3>
+    </td>
+  </tr>
+  <tr>
+    <td>
             <img src="https://avatars0.githubusercontent.com/u/56076095?s=460&u=b18b975c4570628eee4fa5d24439c384f1f70c6c&v=4" width="150" />
-        </div>
+    </td>
+    <td>
+            <img src="https://avatars2.githubusercontent.com/u/55451472?s=460&u=0728bfc37d68f34357ac2825ae14a4af715c6ebd&v=4" width="150" />
+    </td>
+    <td>
+            <img src="https://avatars0.githubusercontent.com/u/33133633?s=460&u=0c04c3ba77c1a999f0d087646c38b4902a1c665a&v=4" width="150" />
+    </td>
+    <td>
+            <img src="https://avatars3.githubusercontent.com/u/34027454?s=460&v=4" width="150" />
+    </td>
+    <td>
+            <img src="https://avatars1.githubusercontent.com/u/5339914?s=460&u=ea140c59718ae85b6b33fa97cabb4232a084f30a&v=4" width="150" />
+    </td>
+    <td>
+            <img src="https://avatars3.githubusercontent.com/u/9661903?s=460&u=ae6e33f486ad0fed762cb7d8f1e07d4540130b27&v=4" width="150" />
     </td>
   </tr>
 </table>
