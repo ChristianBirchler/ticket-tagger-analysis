@@ -1,6 +1,6 @@
 # Results
 
-### Overview
+## Overview
 
 `Comparison_models_weka.xlsx`:
 - The results of comparing various models in WEKA with the balanced pandas data set.
@@ -40,33 +40,33 @@ with Boost Models (AdaBoost, LogitBoost) is also taken into account when compari
 
 For every evaluation, the WEKA default configuration for 10-fold Cross Validation was used.
 
-#### J48 
+### J48 
 
 Classification Configuration: 
 ```
 J48 -C 0.25 -M 2
 ```
 
-#### RandomForest
+### RandomForest
 
 Classification Configuration: 
 ```
 RandomeForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
 ```
 
-#### NaiveBayes
+### NaiveBayes
 
 Classification Configuration: none
 
 
-#### AdaBoost (with J48)
+### AdaBoost (with J48)
 
 Classification Configuration: 
 ```
 AdaBoostM1 -P 100 -S1 -I 10- weka.classifiers.trees.J48 --C 0.25 -M 2
 ```
 
-#### LogitBoost (with DecisionStump)
+### LogitBoost (with DecisionStump)
 
 Classification Configuration: 
 ```
@@ -90,14 +90,14 @@ we compare the multibinary results from fasttext and the binary relevance result
 
 For every evaluation, the MEKA default configuration for 10-fold Cross Validation was used.
 
-#### J48 
+### J48 
 
 Classification Configuration: 
 ```
 BR – W weka.classifier.trees.J48 -- -C 0.25 -M 2
 ```
 
-#### RandomForest
+### RandomForest
 
 Classification Configuration: 
 ```
@@ -105,12 +105,12 @@ BR – W weka.classifier.trees.RandomForest -- -I 100 -K 0 -S 1 -num-slots 1
 ```
 
 
-#### NaiveBayes
+### NaiveBayes
 
 Classification Configuration: none
 
 
-# Tables
+## Tables
 
 Ticket Tagger Classification Performances:
 
@@ -215,7 +215,7 @@ For Logitboost preprocessing actually lowered the F-Score.  With Hoeffdingtree a
 Overall AdaBoost and Logitboost did produce the best F-Scores but they are also by far the slowest models. 
 
 
-## Discussion
+# Discussion
 
 - interpretations: what do the results mean?
 - implications: why do the results matter?
@@ -232,7 +232,6 @@ With these models, it is possible to enhance the process of issue labeling. In t
 
 The results show also the impact of the different preprocessing techniques on the performance.
 
-> LINK TO TABLES IN RESULTs
 
 
 
