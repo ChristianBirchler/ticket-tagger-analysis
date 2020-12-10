@@ -150,12 +150,14 @@ With these models, it is possible to enhance the process of issue labeling. This
 The results show also the impact of the different preprocessing techniques on the performance. This is a relevant observation because the original implementation of Ticket Tagger does not perform preprocessing at all.
 
 The results also show some limitations. We can not ensure that the performances of J48, Random Forest, Ada Boost, and Logit Boost are the best for the majority of repositories. We assessed in our study only issues of the pandas' repository which fulfills the following conditions:
+- Issues from one single GitHub repository
 - Over 1'000 issues per label (bug, enhancement, question)
 - Issues are written in English
 - The project does not use the Java Ecosystem
 
-We have the hope that future work will replicate our findings of the study. Furthermore, a more diverse validation set of issues of different projects would lead to higher confidence in the results.
+It is also worth to mention that we did not constrain model sizes or processing time of the different pipelines. We did not integrate our pipeline into the Ticket Tagger GitHub application since compatibility was not a constraint in our project. We have the hope that future work will replicate our findings of the study. Furthermore, a more diverse validation set of issues of different projects would lead to higher confidence in the results.
 
+We also tried multi binary labeling (binary relevance in MEKA) but to our surprise it performed worse than Ticket Tagger and thus we did not investigate further.
 
 
 ## Tables
