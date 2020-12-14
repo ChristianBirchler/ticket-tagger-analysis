@@ -24,18 +24,18 @@ Tasks Overview:
 
 * Extend the original study
     * Extend the original data set with another balanced real world data set
-        * [Extract Issues Data](./scripts/README.md)
-        * [Pandas Data Set](./datasets/README.md)
+        * [Extract Issues Data](../code-pipeline/README.md)
+        * [Pandas Data Set](../datasets/README.md)
     * Extend the original ML pipeline
         * Compare our approach to other baseline approaches
-            * [Convert our Data Sets to arff format for WEKA / MEKA](./scripts/README.md)
-            * [arff data sets](./datasets/README.md)
+            * [Convert our Data Sets to arff format for WEKA / MEKA](../code-pipeline/README.md)
+            * [arff data sets](../datasets/README.md)
         * Preprocessing with Ticket Tagger
-            * [Preprocessing](./scripts/README.md)
-            * [Preprocessed Data Sets](./datasets/README.md)
+            * [Preprocessing](../code-pipeline/README.md)
+            * [Preprocessed Data Sets](../datasets/README.md)
         * Multi binary label classification
-            * [Multi Binary Scripts](./scripts/README.md)
-            * [Multi Binary Data Sets](./datasets/README.md)
+            * [Multi Binary Scripts](../code-pipeline/README.md)
+            * [Multi Binary Data Sets](../datasets/README.md)
 
 
 ## Results / Discussion
