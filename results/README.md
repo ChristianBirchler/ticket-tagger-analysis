@@ -112,7 +112,7 @@ We decided to compare the different models based on their F scores. In one table
   We took the original dataset used for Ticket Tagger, an only English version of this dataset and a completely different dataset. 
 In the original study Ticket Tagger ([Link to the original Repository](https://github.com/rafaelkallis/ticket-tagger) ) has an average F-Score of 0.826. Out of all the WEKA/MEKA models we tested not one reached the 0.8 score for the original dataset.<br>
   
-For the pandas dataset we tested we got better results. With WEKA the following achieved better results, i.e, > 0.8 for:
+For the pandas dataset we tested we got better results. With WEKA we achieved better results, i.e, > 0.8 for the following models:
 - J48
 - RandomForest
 - AdaBoost
@@ -148,7 +148,7 @@ With these models, it is possible to enhance the process of issue labeling. This
 
 The results show also the impact of the different preprocessing techniques on the performance. This is a relevant observation because the original implementation of Ticket Tagger does not perform preprocessing at all.
 
-The results also show some limitations. We can not ensure that the performances of J48, Random Forest, Ada Boost, and Logit Boost are the best for the majority of repositories. We assessed in our study only issues of the pandas' repository which fulfills the following conditions:
+The results also show some limitations. It is not possible to ensure that the performances of J48, Random Forest, Ada Boost, and Logit Boost are the best for the majority of repositories. We assessed in our study only issues of the Pandas' repository which fulfills the following conditions:
 - Issues from one single GitHub repository
 - Over 1'000 issues per label (bug, enhancement, question)
 - Issues are written in English
