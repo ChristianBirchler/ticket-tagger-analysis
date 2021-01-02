@@ -8,15 +8,15 @@ The maintenance of a software project depends on issues. Large projects get a hi
 
 [Ticket Tagger](https://github.com/rafaelkallis/ticket-tagger/tree/master/src) is a machine learning-driven issue classification bot. It was written by [Rafael Kallis](https://github.com/rafaelkallis) in the scope of a project similar to this one. Once installed in a GitHub repository, Ticket Tagger offers the benefit of automatic issue classification. Small repositories may not gain much value from it, but larger ones do since they receive more issues per time unit.
 
-In this project, we perform an empirical investigation of machine learning prediction strategies for issue types classification on GitHub. First, the data is extended with the data set from the pandas' repository. Then various preprocessing strategies (like stemming and stopword removal) are used on the pandas' data set to explore the possibilities of Ticket Tagger. And finally, all preprocessed and not preprocessed data sets are also evaluated in the [WEKA](https://www.cs.waikato.ac.nz/ml/weka/) and [MEKA](https://waikato.github.io/meka/) GUI, such that the results from the Ticket Tagger software can be referenced and compared to the results of similar software. All results represent the evaluation metrics 
+In this project, we perform an empirical investigation of machine learning prediction strategies for issue types classification on GitHub. First, the data is extended with the data set from the pandas' repository. Then various preprocessing strategies (such as stemming and stopword removal) are used on the pandas' data set to explore the possibilities of Ticket Tagger. And finally, all preprocessed and not preprocessed data sets are also evaluated in the [WEKA](https://www.cs.waikato.ac.nz/ml/weka/) and [MEKA](https://waikato.github.io/meka/) GUI, such that the results from the Ticket Tagger software can be referenced and compared to the results of similar software. All results represent the evaluation metrics 
 of a 10-Fold [cross validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)). More specifically, the F-Score is the main metric that is compared in this project.
 
 ## Study Methodology
-Ticket Tagger can classify issues with the fasttext classifier. The fasttext classifier shows good performance so far. However, we are interested if we can do better with other classifiers. This leads us to the first research question:
->*RQ1*: To what extent can we increase performance with other classifiers?
+Ticket Tagger can classify issues with the fasttext classifier. The fasttext classifier shows good performance so far. However, we are interested to investigate whether better results can be achieved with other classifiers. This leads us to the first research question:
+>*RQ1*: To what extent performance change with different supervised classifiers?
 
 Furthermore, Ticket Tagger does no data preprocessing which could affect the performance. Since there are various preprocessing techniques such as porter stemming, snowball stemming, and stopword removal we have also the following research question:
->*RQ2*: To what extent do preprocessing techniques affect the models for issue classifications?
+>*RQ2*: To what extent do preprocessing techniques affect the (best) models for issue classifications?
 
 We provided separate README files with a detailed explanation of how we collected the data and performed the analysis. Below we provided an overview of tasks that are performed in our project.
 
@@ -49,4 +49,4 @@ With our results, we can give answers to the research questions:
 
 >RQ2: The highest of F-scores depending on the preprocessing techniques we see for Ticket Tagger and its fasttext classifier. It varies between 66% and 79%. All other evaluated classifiers have a similar and a smaller variance for the F-score than Ticket Tagger.
 
-In this project, we first collect new issue data from one repository namely pandas. We looked at different classifiers and compared them with the Ticket Tagger. We found out that in our case it is possible to increase the performance of Ticket Tagger if we use a more appropriate classifier. We would be happy if other researchers could replicate our study to confirm our findings. Also, evaluations with more preprocessing techniques could be applied since we believe that it is possible to gain more performance increase with other techniques.
+In this project, we first collect new issue data from one repository namely pandas. We looked at different classifiers and compared them with the Ticket Tagger. We found out that in our case it is possible to increase the performance of Ticket Tagger if we use a more appropriate classifier. We are interested in other researchers interested in replicating our study, to confirm our findings. Also, evaluations with more preprocessing techniques could be applied since we believe that it is possible to gain more performance increase with other techniques.
