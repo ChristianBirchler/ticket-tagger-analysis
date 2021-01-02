@@ -111,6 +111,7 @@ We decided to compare the different models based on their F scores. In one table
  the three models J48, RandomForest and Naïve Bayes for three different datasets.
   We took the original dataset used for Ticket Tagger, an only English version of this dataset and a completely different dataset (Pandas). 
 In the original study Ticket Tagger ([Link to the original Repository](https://github.com/rafaelkallis/ticket-tagger) ) has an average F-Score of 0.826. 
+As follow, we report the main tables with sigificant results, then we discussed them in detail.
 
 
 ### Ticket Tagger Classification Performances:
