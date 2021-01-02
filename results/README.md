@@ -26,7 +26,7 @@
 - The results of comparing different models in WEKA/MEKA with different data sets (and different repositories)
 
 
-## WEKA
+## WEKA - Machine learning environment
 
 [WEKA](https://www.cs.waikato.ac.nz/ml/weka/) (Waikato Environment for Knowledge Analysis) is a software developed by the University of Waikato in New Zealand.
 It is a free software licensed under the GNU General Public License, and the companion to the book 'Data Mining: Practical Machine Learning Tools and Techniques'.
@@ -75,7 +75,7 @@ LogitBoost -P 100 -L-1.797…E308 -H 1.0 -Z3.0 -O1 -E1 -S1 -I 10 -W weka.classif
 
 
 
-## MEKA (Binary Relevance)
+## MEKA (Binary Relevance) - Machine learning environment
 
 The [MEKA](https://waikato.github.io/meka/) project provides an open source implementation of methods for multi-label learning and evaluation.
 In multi-label classification, we want to predict multiple output variables for each input instance. 
@@ -119,7 +119,7 @@ For the pandas dataset we tested we got better results. With WEKA the following 
 - AdaBoost
 - LogitBoost
 
-With Binary Relevance in MEKA only RandomForest passed the 0.8 mark but J48 came close with up to 0.793. <br>
+With Binary Relevance in MEKA only RandomForest achieved > 0.8 score but J48 came close with up to 0.793. <br>
 The best result with Rafaels original dataset we achieved with RandomForest in WEKA. 
 The highest F-Score overall we got by using AdaBoost with  J48 on the Pandasdataset, this got us an F Score of 0.825. \
 We tried if we would get better results by using preprocessed datasets: 
@@ -160,7 +160,7 @@ It is also worth to mention that we did not constrain model sizes or processing 
 We also tried multi binary labeling (binary relevance in MEKA) but to our surprise it performed worse than Ticket Tagger and thus we did not investigate further.
 
 
-## Tables
+## Tables of Main Results
 
 ### Ticket Tagger Classification Performances:
 
