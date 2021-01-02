@@ -110,16 +110,15 @@ Classification Configuration: none
 We decided to compare the different models based on their F scores. In one table ([Link to the table](WEKA&MEKA_F-Scores.xlsx)) we compared
  the three models J48, RandomForest and Naïve Bayes for three different datasets.
   We took the original dataset used for Ticket Tagger, an only English version of this dataset and a completely different dataset. 
-In the original study Ticket Tagger ([Link to the original Repository](https://github.com/rafaelkallis/ticket-tagger) ) has an average F-Score of 0.826. Out of all the models we tested 
- not one reached the 0.8 mark for this dataset.<br>
+In the original study Ticket Tagger ([Link to the original Repository](https://github.com/rafaelkallis/ticket-tagger) ) has an average F-Score of 0.826. Out of all the WEKA/MEKA models we tested not one reached the 0.8 score for the original dataset.<br>
   
-For the pandas dataset we tested we got better results. With WEKA the following models passed the 0.8 mark:
+For the pandas dataset we tested we got better results. With WEKA the following achieved beter results, i.e, > 0.8 for:
 - J48
 - RandomForest
 - AdaBoost
 - LogitBoost
 
-With Binary Relevance in MEKA only RandomForest achieved > 0.8 score but J48 came close with up to 0.793. <br>
+With "Binary Relevance" in MEKA only RandomForest achieved > 0.8 score but J48 came close with up to 0.793. <br>
 The best result with Rafaels original dataset we achieved with RandomForest in WEKA. 
 The highest F-Score overall we got by using AdaBoost with  J48 on the Pandasdataset, this got us an F Score of 0.825. \
 We tried if we would get better results by using preprocessed datasets: 
@@ -131,7 +130,7 @@ that some of the models where more affected then others.
 There we can see that with some Preprocessing the F-score
 can be pushed up to the same level as Logitboost. Ticket Tagger does get both high and low results with preprocessing. Ticket Tagger got the highest F-Score with the stopword-snowball preprocessing. PTB preprocessing resulted in the lowest F-score for Ticket Tagger.
  The If we look at our result table 
-([Link to the Table](Comparison_preprocessing_weka.xlsx)), the preprocessing method J48 performed the best with  is stopword. 
+([Link to the Table](Comparison_preprocessing_weka.xlsx)), the preprocessing method J48 performed the best with is stopword. 
 For Logitboost preprocessing actually lowered the F-Score.  With Hoeffdingtree all Preprocessing did improve the F-Score, but here again the stopword preprocessing did the best. For the Naïve Bayes it was actually the PTB Preprocessing that improved the F-Score the most and some of the other methods even lowered the F-Score. 
 Overall AdaBoost and Logitboost did produce the best F-Scores but they are also by far the slowest models. 
 
@@ -139,13 +138,13 @@ Overall AdaBoost and Logitboost did produce the best F-Scores but they are also 
 # Discussion
 
 
-In our project, we are interested if we can increase the performance of Ticket Tagger. Our results show that the performance of Ticket Tagger is worse with our train and test dataset. So in our setting with data from the pandas project we have models that outperform the fasttext classifier used by Ticket Tagger. The following models would indeed improve the performance of Ticket Tagger:
+In our project, we are interested in investigating wether it is possible to increase the performance of Ticket Tagger. Our results show that the performance of Ticket Tagger is worse with our train and test datasets. In our setting with data from the pandas project we have models that outperform the fasttext classifier used by Ticket Tagger. The following models would indeed improve the performance of Ticket Tagger:
 - J48
 - Random Forest
 - Ada Boost
 - Logit Boost
 
-With these models, it is possible to enhance the process of issue labeling. This result matters in the context of large software projects, it could save a significant amount of money. The developers do not need to spend working hours on manual labeling.
+With these models, it is possible to enhance the process of issue labeling. This result concern the context of this large software project. The developers do not need to spend working hours on manual labeling.
 
 The results show also the impact of the different preprocessing techniques on the performance. This is a relevant observation because the original implementation of Ticket Tagger does not perform preprocessing at all.
 
@@ -157,14 +156,14 @@ The results also show some limitations. We can not ensure that the performances 
 
 It is also worth to mention that we did not constrain model sizes or processing time of the different pipelines. We did not integrate our pipeline into the Ticket Tagger GitHub application since compatibility was not a constraint in our project. We have the hope that future work will replicate our findings of the study. Furthermore, a more diverse validation set of issues of different projects would lead to higher confidence in the results.
 
-We also tried multi binary labeling (binary relevance in MEKA) but to our surprise it performed worse than Ticket Tagger and thus we did not investigate further.
+We also investigated multi-binary labeling (binary relevance in MEKA) but to our surprise it performed worse than Ticket Tagger and thus we did not investigate further.
 
 
 ## Tables of Main Results
 
 ### Ticket Tagger Classification Performances:
 
-[*Data Set Comparison (F-Score)*](./original_vs_pandas.txt) | Fasttext
+[*Data Sets Comparison - Original_vs_Pandas (F-Score)*](./original_vs_pandas.txt) | Fasttext
 --- | ---
 Rafael_partial_english_rebalanced | 0.687
 Rafael_only_english_rebalanced | 0.550
@@ -172,7 +171,7 @@ Pandas_balanced | 0.781
 
 ### Ticket Tagger Multi Binary Classication Performances:
 
-[*Multi Binary F-Score*](./MBL_pandas_benchmark.txt) | Multi Binary (Fasttext)
+[*Multi Binary - Pandas (F-Score)*](./MBL_pandas_benchmark.txt) | Multi Binary (Fasttext)
 --- | ---
 Pandas_balanced | 0.745
 
@@ -217,7 +216,7 @@ Rafael_partial_english_rebalanced | 0.577 | 0.572 | 0.616
 Rafael_only_english_rebalanced | 0.593 | 0.587 | 0.635 
 Pandas_balanced | 0.793 | 0.800 | 0.681
 
-### Preprocessing the pandas data set for Ticket Tagger and WEKA/MEKA:
+### Preprocessing the Pandas data set for Ticket Tagger and WEKA/MEKA:
 
 *F-Score* (See: [[1]](./ticket-tagger-pandas.txt) [[2]](./Comparison_preprocessing_weka.xlsx)) | Fasttext | J48 | Logit Boost | Hoeffding Tree | NaiveBayes
 --- | --- | --- | --- | --- | ---
