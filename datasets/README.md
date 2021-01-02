@@ -5,7 +5,7 @@
 Located in the WEKA_Data_Set directory.
 The data sets have their origin in the data sets that were used for
 fasttext. First the data sets in fasttext format were converted to 
-arff format with our converter script (LINK MULTILABEL CONVERTER). Then
+arff format with our converter script [LINK MULTILABEL CONVERTER](https://github.com/ChristianBirchler/SME_project/blob/main/code-pipeline/data_acquisition/arffConverter_Multilabel.py). Then
 a StringToWordVector filter (provided from WEKA GUI) was applied. 
 
 
@@ -14,7 +14,7 @@ a StringToWordVector filter (provided from WEKA GUI) was applied.
 Located in the MEKA_Data_Set_BinaryRelevance directory.
 The data sets have their origin in the data sets that were used for
 fasttext. First the data sets in fasttext format were converted to 
-arff format with our converter script (LINK BR CONVERTER). Then
+arff format with our converter script [LINK BR CONVERTER](https://github.com/ChristianBirchler/SME_project/blob/main/code-pipeline/data_acquisition/arffConverter_BinaryRelevance.py). Then
 a StringToWordVector filter (provided from MEKA GUI) was applied. 
 
 Note:   The MEKA data sets are different compared to the WEKA data sets in this case, because 
