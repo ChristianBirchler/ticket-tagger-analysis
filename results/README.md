@@ -112,7 +112,7 @@ We decided to compare the different models based on their F scores. In one table
   We took the original dataset used for Ticket Tagger, an only English version of this dataset and a completely different dataset. 
 In the original study Ticket Tagger ([Link to the original Repository](https://github.com/rafaelkallis/ticket-tagger) ) has an average F-Score of 0.826. Out of all the WEKA/MEKA models we tested not one reached the 0.8 score for the original dataset.<br>
   
-For the pandas dataset we tested we got better results. With WEKA the following achieved beter results, i.e, > 0.8 for:
+For the pandas dataset we tested we got better results. With WEKA the following achieved better results, i.e, > 0.8 for:
 - J48
 - RandomForest
 - AdaBoost
