@@ -9,7 +9,7 @@ arff format with our converter script [LINK MULTILABEL CONVERTER](https://github
 a StringToWordVector filter (provided from WEKA GUI) was applied. 
 
 
-## [MEKA Data Set](./meka_data_set)
+## [MEKA Data Set](./meka_data_set_binary-relevance)
 
 Located in the MEKA_Data_Set_BinaryRelevance directory.
 The data sets have their origin in the data sets that were used for
