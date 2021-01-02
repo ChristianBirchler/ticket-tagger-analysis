@@ -1,6 +1,6 @@
 # Results
 
-## Contents
+## (Replication) Raw Data
 
 [Comparison_models_weka.xlsx](./Comparison_models_weka.xlsx)
 - The results of comparing various models in WEKA with the balanced pandas data set.
@@ -105,7 +105,7 @@ BR – W weka.classifier.trees.RandomForest -- -I 100 -K 0 -S 1 -num-slots 1
 
 Classification Configuration: none
 
-## Comparison TicketTagger to WEKA and MEKA
+## Comparison TicketTagger to WEKA and MEKA with Different Preprocesing Data (RQ1 & RQ2)
 
 We decided to compare the different models based on their F scores. In one table ([Link to the table](WEKA&MEKA_F-Scores.xlsx)) we compared
  the three models J48, RandomForest and Naïve Bayes for three different datasets.
