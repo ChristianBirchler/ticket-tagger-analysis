@@ -114,10 +114,19 @@ This repository contains all data, scripts and evaluations to explore those prob
 
 
 
-## Ticket Tagger License
+## License
+
+This repository contains derivative work of [Ticket Tagger](https://github.com/rafaelkallis/ticket-tagger), which is published under the GPL-3 license. This repository also is published under the GPL-3 license.
+
+You are required to cite if you use any of our work:
+
 ```
-Ticket Tagger automatically predicts and labels issue types.
-Copyright (C) 2018,2019,2020  Rafael Kallis
+Moser T., Steiger D., Birchler C., Fried L., Panichella S., Kallis R., 2020. Machine Learning Model Evaluations for GitHub Issue Classification, https://github.com/ChristianBirchler/ticket-tagger-analysis
+```
+
+```
+Machine Learning Model Evaluations for GitHub Issue Classification
+Copyright (C) 2020 Tim Moser, David Steiger, Christian Birchler, Lara Fried, Sebastiano Panichella, Rafael Kallis
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
